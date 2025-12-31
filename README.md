@@ -70,7 +70,7 @@ Architected zero-cost GraphRAG pipeline integrating local LLM inference (Ollama/
 - Eliminated LLM hallucination by implementing two-phase validation (semantic discovery + deterministic graph verification), achieving 70% node recall and 65% answer relevance by grounding agent reasoning in PostgreSQL recursive CTEs
 - Deployed production-grade observability across 4 agent nodes and 6 specialized tools using OpenTelemetry distributed tracing with Jaeger, enabling root-cause analysis of agent decisions with <5ms instrumentation overhead
 
-### High-Concurrency Flash Sale System
+### [High-Concurrency Flash Sale System](https://github.com/yxshwanth/flash-sale-engine)
 **Go, Kafka, Redis, Docker** | Oct 2025 – Nov 2025
 
 Built a distributed microservices platform handling 1,000+ concurrent requests/sec for flash sales with <50ms P99 latency, using Kafka for event streaming and traffic decoupling across order, inventory, and payment services, while implementing sliding-window rate limiting and Prometheus/Grafana observability with real-time alerting.
