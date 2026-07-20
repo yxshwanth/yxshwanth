@@ -114,7 +114,7 @@ Owned a Spring Boot transaction-monitoring path at **100K+/mo**, **sub-200ms**. 
 ### signals
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.shion.dev/api?username=yxshwanth&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=79c0ff&text_color=c9d1d9&ring_color=58a6ff" alt="GitHub stats" />
+  <img height="165" src="https://github-readme-stats.shion.dev/api?username=yxshwanth&show_icons=true&hide_rank=true&include_all_commits=true&count_private=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=79c0ff&text_color=c9d1d9" alt="GitHub stats" />
   &nbsp;
   <img height="165" src="https://github-readme-stats.shion.dev/api/top-langs/?username=yxshwanth&layout=compact&langs_count=6&theme=dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9" alt="Top languages" />
 </p>
