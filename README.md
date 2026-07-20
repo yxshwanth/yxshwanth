@@ -4,106 +4,130 @@
   <img alt="yxshwanth's GitHub profile" src="dark_mode.svg" width="100%" />
 </picture>
 
-# Hi, I'm Yashwanth 👋
+<pre>
+yxshwanth@systems:~$ whoami
+</pre>
 
-**Software Engineer** • MS CS @ CU Boulder (’26)  
-Building high-throughput services, authorization systems, and data platforms.
+**Backend engineer** building production systems in Go, Python, Java, and TypeScript.  
+I care about the unglamorous parts — latency budgets, consistency edges, and what breaks at 10× traffic.
 
----
+`MS CS @ CU Boulder` · `GPA 3.9` · `Open to full-time backend / systems roles`
 
-## 🎓 Education
-
-**University of Colorado Boulder** | Boulder, CO  
-Master of Science in Computer Science | GPA: 3.9/4.0 | May 2026
-
-**Chaitanya Bharathi Institute of Technology** | Hyderabad, India  
-Bachelor of Engineering, AI & Data Science | GPA: 8.7/10.0 | May 2024
-
----
-
-## 🛠️ Tech Stack
-
-**Languages:**
-![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=postgresql&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=c%2B%2B&logoColor=white)
-
-**Distributed Systems:**
-- Kafka, gRPC, Protobuf, Redis, REST APIs, OAuth2, Event-Driven Architecture, OpenTelemetry
-
-**Cloud & Infrastructure:**
-- AWS (ECS, Lambda, S3, SQS, DynamoDB), Docker, Kubernetes, Terraform, CI/CD (Jenkins, GitHub Actions)
-
-**Databases:**
-- PostgreSQL, CockroachDB, Neo4j, Redis, MongoDB, BigQuery, DuckDB
-
-**AI/ML & Observability:**
-- LangGraph, LangChain, Ollama, RAG Architectures, Sentence-transformers, Prometheus, Grafana, Jaeger
+<p align="left">
+  <a href="mailto:yashwanth.apply@gmail.com"><img src="https://img.shields.io/badge/email-yashwanth.apply%40gmail.com-181717?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://linkedin.com/in/yashwanth-mali"><img src="https://img.shields.io/badge/linkedin-yashwanth--mali-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://github.com/yxshwanth"><img src="https://img.shields.io/badge/github-yxshwanth-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
+</p>
 
 ---
 
-## 💼 Experience
+### lately
 
-
-### Software Engineer (Full-time Internship) @ IntelleWings (FinTech)
-**July 2023 – June 2024** | Chandigarh, India
-
-- Architected an asynchronous fraud detection pipeline on AWS ECS processing 100K+ monthly events with sub-200ms P99 latency, leveraging SQS for buffering and Lambda for event processing, while implementing PgBouncer connection pooling to scale database capacity by 6x (300 → 1,800 connections) and eliminate connection exhaustion during 10x traffic spikes
-- Optimized API throughput by 85% (800ms → 120ms) through 3-tier Redis caching with TTL-based invalidation, reducing PostgreSQL load by 70% for 50K+ daily user profile reads and maintaining P99 latency <150ms under peak load
-- Reduced deployment time by 87% (2hr → 15min) by automating rollback capabilities in Jenkins CI/CD pipeline with health-check validation and canary deployments, enabling zero-downtime daily production releases
+| | |
+| :--- | :--- |
+| **Credible Data** | Shipped Atlas backend — SSE chat, Malloy over Postgres/Neo4j/BigQuery; cut API P95 **1.2s → 480ms** |
+| **Interlock** | eBPF + Go MCP firewall that stops AI agents from exfiltrating secrets |
+| **Open source** | PRs in **Auth0 OpenFGA** & **Google Malloy** (incl. Check API consistency-token fix) |
 
 ---
 
-## 🚀 Featured Projects
+### selected work
 
-### [Zenith: Distributed Authorization Engine](https://github.com/yxshwanth/Zenith)
-**Go, CockroachDB, gRPC, Redis** | Sept 2025 – Dec 2025
+<table>
+<tr>
+<td width="50%" valign="top">
 
-Engineered Zanzibar-inspired ReBAC system in Go solving multi-tenancy authorization for 10K+ organizations, supporting recursive permission expansion with formal causal consistency proofs validated through Jepsen-style testing.
+**[Interlock](https://github.com/yxshwanth/Interlock)**  
+`Go` `eBPF` `Kubernetes`
 
-- Eliminated stale-read anomalies ("new enemy problem") by implementing HLC timestamp-based consistency tokens (Zookies) in gRPC metadata, ensuring linearizable permission checks across distributed CockroachDB clusters
-- Achieved sub-10ms P95 latency for direct checks and <25ms for 3-level nested permissions across 100K+ relationships by combining Singleflight deduplication with LRU caching, reducing redundant graph traversals by 80%
-- Increased throughput to 10K+ requests/sec using CockroachDB AS OF SYSTEM TIME for stale-consistent follower reads, reducing primary node load by 65% while maintaining strong consistency guarantees
+Runtime exfiltration firewall for AI agents.  
+MCP proxy + syscall tracing; ~0.5ms overhead on sensitive reads.
 
-### [LineageGraph: GraphRAG Data Lineage Engine](https://github.com/yxshwanth/LineageGraph)
-**Python, PostgreSQL, LangGraph, FastAPI** | Aug 2025 – Dec 2025
+</td>
+<td width="50%" valign="top">
 
-Architected zero-cost GraphRAG pipeline integrating local LLM inference (Ollama/Mistral 7B) with 384-dim vector embeddings, achieving sub-200ms semantic search and <50ms graph traversal at depth=3 through LangGraph state machine orchestration.
+**[Dispatch](https://github.com/yxshwanth/Dispatch)**  
+`Go` `Kafka` `Postgres` `Redis`
 
-- Eliminated LLM hallucination by implementing two-phase validation (semantic discovery + deterministic graph verification), achieving 70% node recall and 65% answer relevance by grounding agent reasoning in PostgreSQL recursive CTEs
-- Deployed production-grade observability across 4 agent nodes and 6 specialized tools using OpenTelemetry distributed tracing with Jaeger, enabling root-cause analysis of agent decisions with <5ms instrumentation overhead
+Multi-tenant webhook delivery with honest circuit breakers.  
+Ingest p99 **2.1ms** · delivery p99 **~2.5ms**
 
-### [High-Concurrency Flash Sale System](https://github.com/yxshwanth/flash-sale-engine)
-**Go, Kafka, Redis, Docker** | Oct 2025 – Nov 2025
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-Built a distributed microservices platform handling 1,000+ concurrent requests/sec for flash sales with <50ms P99 latency, using Kafka for event streaming and traffic decoupling across order, inventory, and payment services, while implementing sliding-window rate limiting and Prometheus/Grafana observability with real-time alerting.
+**[Zenith](https://github.com/yxshwanth/zenith)**  
+`Go` `CockroachDB` `gRPC`
 
-- Guaranteed strict data consistency by implementing idempotency keys and atomic Redis Lua scripts for inventory management, eliminating race conditions during 1,000 RPS bursts through pessimistic locking and WATCH-based optimistic transactions
-- Achieved 99.9% system availability during simulated 30-second payment outages using Circuit Breaker pattern and Dead Letter Queues with exponential backoff, enabling graceful degradation and automatic retry while reducing incident detection time by 60% through anomaly alerting
+Zanzibar-style ReBAC across 10K+ tenants.  
+**sub-10ms P95** at **10K+ RPS** (k6)
 
----
+</td>
+<td width="50%" valign="top">
 
----
+**[LineageGraph](https://github.com/yxshwanth/LineageGraph)**  
+`Python` `LangGraph` `Postgres`
 
-## 📊 GitHub Stats
+GraphRAG lineage with hallucination guards.  
+Semantic search **&lt;200ms** · graph depth=3 **&lt;50ms**
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=yxshwanth&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=yxshwanth&layout=compact&theme=radical&hide_border=true&bg_color=0D1117)
-
----
-
-## 📫 Connect
-
-- **Email:** [yama6766@colorado.edu](mailto:yama6766@colorado.edu)
-- **Phone:** 303-949-7624
-- **LinkedIn:** [linkedin.com/in/yashwanth-mali](https://linkedin.com/in/yashwanth-mali)
-- **GitHub:** [github.com/yxshwanth](https://github.com/yxshwanth)
-- **Location:** Boulder, CO
+</td>
+</tr>
+</table>
 
 ---
 
-*Building scalable systems, one commit at a time.* ⚡
+### stack
+
+```text
+languages    Go · Python · Java · TypeScript · Rust · SQL · C (eBPF)
+systems      gRPC · Kafka · Redis · Postgres · CockroachDB · Neo4j
+runtime      Kubernetes · Docker · AWS (EKS) · GCP (Cloud Run)
+observe      OpenTelemetry · Prometheus · Grafana · Jaeger
+security     eBPF · OAuth2 / JWT · HMAC · OCSF / SIEM
+```
+
+<p align="left">
+  <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java" />
+  <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white" alt="Kafka" />
+  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes" />
+</p>
+
+---
+
+### experience
+
+**Software Engineer — Credible Data** · *Aug 2025 – May 2026* · Boulder, CO  
+Built the Express/Node backend for an AI-native data-discovery platform (SSE streaming, Auth0/JWT gateway, custom MCP server). Tuned pools & indexes to cut production P95 by **60%**. GCP + GitHub Actions with health-check rollbacks.
+
+**Software Engineer Intern — IntelleWings** · *Feb 2023 – Jun 2024* · FinTech  
+Owned a Spring Boot transaction-monitoring path at **100K+/mo**, **sub-200ms**. Multi-tier Redis cache cut query latency **70%**; Jenkins/Docker/K8s cut release cycles from **5 days → 3**.
+
+---
+
+### signals
+
+<p align="center">
+  <img height="160" src="https://github-readme-stats.vercel.app/api?username=yxshwanth&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=79c0ff&text_color=c9d1d9&ring_color=58a6ff" alt="GitHub stats" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yxshwanth&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9" alt="Top languages" />
+</p>
+
+---
+
+<p align="center">
+  <i>latency is a feature · consistency is a contract · tests name what they don't catch</i>
+</p>
+
+<p align="center">
+  <a href="mailto:yashwanth.apply@gmail.com">email</a>
+  ·
+  <a href="https://linkedin.com/in/yashwanth-mali">linkedin</a>
+  ·
+  <a href="https://github.com/yxshwanth">github</a>
+</p>
