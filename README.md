@@ -14,7 +14,7 @@ I care about the unglamorous parts — latency budgets, consistency edges, and w
 `MS CS @ CU Boulder` · `GPA 3.9` · `Open to full-time backend / systems roles`
 
 <p align="left">
-  <a href="mailto:me@yashwanthreddymali.com"><img src="https://img.shields.io/badge/email-m2%40yashwanthreddymali.com-181717?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="mailto:me@yashwanthreddymali.com"><img src="https://img.shields.io/badge/email-me%40yashwanthreddymali.com-181717?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
   <a href="https://linkedin.com/in/yashwanth-mali"><img src="https://img.shields.io/badge/linkedin-yashwanth--mali-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="https://github.com/yxshwanth"><img src="https://img.shields.io/badge/github-yxshwanth-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
 </p>
