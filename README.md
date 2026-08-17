@@ -1,7 +1,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="dark_mode.svg" />
   <source media="(prefers-color-scheme: light)" srcset="light_mode.svg" />
-  <img alt="yxshwanth's GitHub profile" src="dark_mode.svg" width="100%" />
+  <img alt="yxshwanth — Backend Engineer, San Jose CA. Go, Python, Java, TypeScript, SQL." src="dark_mode.svg" width="100%" />
 </picture>
 
 <picture>
@@ -10,15 +10,28 @@
   <img alt="Recent public GitHub contributions — merged pull requests, reviews, issues, pushes and releases across my repos and upstream projects" src="assets/activity-dark.svg" width="100%" />
 </picture>
 
-**Backend engineer** building production systems in Go, Python, Java, and TypeScript.  
-I care about the unglamorous parts — latency budgets, consistency edges, and what breaks at 10× traffic.
-
-`MS CS @ CU Boulder` · `GPA 3.9` · `Open to full-time backend / systems roles`
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/intro-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/intro-light.svg" />
+  <img alt="Backend engineer building production systems in Go, Python, Java, and TypeScript. I care about the unglamorous parts — latency budgets, consistency edges, and what breaks at 10x traffic. MS CS @ CU Boulder, GPA 3.9, open to full-time backend and systems roles." src="assets/intro-dark.svg" width="100%" />
+</picture>
 
 <p align="left">
-  <a href="mailto:me@yashwanthreddymali.com"><img src="https://img.shields.io/badge/email-me%40yashwanthreddymali.com-181717?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
-  <a href="https://linkedin.com/in/yashwanth-mali"><img src="https://img.shields.io/badge/linkedin-yashwanth--mali-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="https://github.com/yxshwanth"><img src="https://img.shields.io/badge/github-yxshwanth-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
+  <a href="mailto:me@yashwanthreddymali.com"><picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/btn-email-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="assets/btn-email-light.svg" />
+    <img alt="Email me@yashwanthreddymali.com" src="assets/btn-email-dark.svg" height="34" />
+  </picture></a>
+  <a href="https://linkedin.com/in/yashwanth-mali"><picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/btn-linkedin-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="assets/btn-linkedin-light.svg" />
+    <img alt="LinkedIn linkedin.com/in/yashwanth-mali" src="assets/btn-linkedin-dark.svg" height="34" />
+  </picture></a>
+  <a href="https://github.com/yxshwanth"><picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/btn-github-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="assets/btn-github-light.svg" />
+    <img alt="GitHub github.com/yxshwanth" src="assets/btn-github-dark.svg" height="34" />
+  </picture></a>
 </p>
 
 <picture>
@@ -33,75 +46,41 @@ I care about the unglamorous parts — latency budgets, consistency edges, and w
   <img alt="Stack laid out along a request path — edge: gRPC, REST, SSE, OAuth2/JWT, rate limiting · services: Go, Python, Java, Rust, TypeScript, C/eBPF · cache: Redis, singleflight, LRU + TTL, idempotency · state: Postgres, CockroachDB, Neo4j, DuckDB, BigQuery · Kafka event bus · Kubernetes, Docker, AWS, GCP, Terraform, GitHub Actions · OpenTelemetry, Prometheus, Grafana, Jaeger" src="assets/stack-dark.svg" width="100%" />
 </picture>
 
----
-
-### selected work
-
 <table>
 <tr>
-<td width="50%" valign="top">
-
-**[Zenith](https://github.com/yxshwanth/zenith)** · `Go` `CockroachDB` `gRPC`
-
-Zanzibar-style ReBAC across 10K+ tenants.  
-**sub-10ms P95** · **10K+ RPS** under k6
-
-</td>
-<td width="50%" valign="top">
-
-**[Dispatch](https://github.com/yxshwanth/Dispatch)** · `Go` `Kafka` `Postgres` `Redis`
-
-Multi-tenant webhook delivery with honest circuit breakers.  
-Ingest **p99 2.1ms** · delivery **p99 ~2.5ms**
-
-</td>
+<td width="50%"><a href="https://github.com/yxshwanth/zenith"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/work-zenith-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/work-zenith-light.svg" />
+  <img alt="Zenith — Zanzibar-style ReBAC across 10K+ tenants. Go, CockroachDB, gRPC. sub-10ms P95 at 10K+ RPS under k6." src="assets/work-zenith-dark.svg" width="100%" />
+</picture></a></td>
+<td width="50%"><a href="https://github.com/yxshwanth/Dispatch"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/work-dispatch-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/work-dispatch-light.svg" />
+  <img alt="Dispatch — Multi-tenant webhook delivery with honest circuit breakers. Go, Kafka, Postgres, Redis. Ingest p99 2.1ms, delivery p99 ~2.5ms." src="assets/work-dispatch-dark.svg" width="100%" />
+</picture></a></td>
 </tr>
 <tr>
-<td width="50%" valign="top">
-
-**[Interlock](https://github.com/yxshwanth/Interlock)** · `Go` `eBPF` `Kubernetes`
-
-Runtime exfiltration firewall for AI agents — MCP proxy + syscall tracing.  
-**~0.5ms** overhead on sensitive reads
-
-</td>
-<td width="50%" valign="top">
-
-**[LineageGraph](https://github.com/yxshwanth/LineageGraph)** · `Python` `LangGraph` `Postgres`
-
-GraphRAG data lineage with hallucination guards.  
-Semantic search **&lt;200ms** · graph depth=3 **&lt;50ms**
-
-</td>
+<td width="50%"><a href="https://github.com/yxshwanth/Interlock"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/work-interlock-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/work-interlock-light.svg" />
+  <img alt="Interlock — Runtime exfiltration firewall for AI agents, MCP proxy plus syscall tracing. Go, eBPF, Kubernetes. ~0.5ms overhead on sensitive reads." src="assets/work-interlock-dark.svg" width="100%" />
+</picture></a></td>
+<td width="50%"><a href="https://github.com/yxshwanth/LineageGraph"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/work-lineagegraph-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/work-lineagegraph-light.svg" />
+  <img alt="LineageGraph — GraphRAG data lineage with hallucination guards. Python, LangGraph, Postgres. Semantic search under 200ms, graph depth=3 under 50ms." src="assets/work-lineagegraph-dark.svg" width="100%" />
+</picture></a></td>
 </tr>
 </table>
 
----
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/experience-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/experience-light.svg" />
+  <img alt="Experience — Software Engineer at Credible Data (Aug 2025 to May 2026, Boulder CO) and Software Engineer Intern at IntelleWings (Feb 2023 to Jun 2024, FinTech). Open source: merged PRs in Auth0 OpenFGA and Google Malloy." src="assets/experience-dark.svg" width="100%" />
+</picture>
 
-### experience
-
-**Software Engineer — Credible Data** · *Aug 2025 – May 2026* · Boulder, CO  
-Express/Node backend for an AI-native data-discovery platform: SSE streaming, Auth0/JWT gateway, custom MCP server, Malloy over Postgres / Neo4j / BigQuery. Tuned pools and indexes to cut production P95 **1.2s → 480ms**. GCP + GitHub Actions with health-check rollbacks.
-
-**Software Engineer Intern — IntelleWings** · *Feb 2023 – Jun 2024* · FinTech  
-Owned a Spring Boot transaction-monitoring path at **100K+/mo**, **sub-200ms**. Multi-tier Redis cache cut query latency **70%**; Jenkins/Docker/K8s cut release cycles **5 days → 3**.
-
-**Open source** — merged PRs in [Auth0 OpenFGA](https://github.com/openfga/openfga) and [Google Malloy](https://github.com/malloydata/malloy), including a Check API consistency-token fix.
-
----
-
-<p align="center">
-  <i>latency is a feature · consistency is a contract · tests name what they don't catch</i>
-</p>
-
-<p align="center">
-  <a href="mailto:me@yashwanthreddymali.com">email</a>
-  ·
-  <a href="https://linkedin.com/in/yashwanth-mali">linkedin</a>
-  ·
-  <a href="https://github.com/yxshwanth">github</a>
-</p>
-
-<p align="center">
-  <sub>every graphic above is generated by <a href="assets/render.py">assets/render.py</a> and redrawn daily by <a href="../../actions/workflows/refresh-profile.yml">GitHub Actions</a></sub>
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/footer-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/footer-light.svg" />
+  <img alt="latency is a feature · consistency is a contract · tests name what they don't catch" src="assets/footer-dark.svg" width="100%" />
+</picture>

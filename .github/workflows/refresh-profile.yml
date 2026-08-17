@@ -32,6 +32,11 @@ jobs:
         with:
           python-version: "3.12"
 
+      # fonttools subsets IBM Plex per panel; the woff extra pulls in brotli,
+      # without which woff2 compression is unavailable
+      - name: Install renderer dependencies
+        run: pip install --quiet "fonttools[woff]>=4.50"
+
       - name: Render SVGs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
