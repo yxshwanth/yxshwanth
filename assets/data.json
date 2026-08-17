@@ -2,7 +2,7 @@
   "activity": {
     "rows": [
       {
-        "at": "2026-08-17T05:21:45Z",
+        "at": "2026-08-17T05:23:12Z",
         "detail": "pushed to main",
         "kind": "commit",
         "repo": "yxshwanth/yxshwanth"
@@ -51,25 +51,25 @@
       },
       {
         "at": "2026-08-08T05:45:54Z",
-        "detail": "#3248 ",
+        "detail": "reviewed #3248 ",
         "kind": "review",
         "repo": "openfga/openfga"
       },
       {
         "at": "2026-08-08T05:45:54Z",
-        "detail": "#3248 ",
+        "detail": "reviewed #3248 ",
         "kind": "review",
         "repo": "openfga/openfga"
       },
       {
         "at": "2026-08-08T05:45:53Z",
-        "detail": "#3248 ",
+        "detail": "reviewed #3248 ",
         "kind": "review",
         "repo": "openfga/openfga"
       },
       {
         "at": "2026-08-08T05:45:53Z",
-        "detail": "#3248 ",
+        "detail": "reviewed #3248 ",
         "kind": "review",
         "repo": "openfga/openfga"
       },
@@ -105,7 +105,7 @@
       },
       {
         "at": "2026-08-06T14:35:20Z",
-        "detail": "#3248 ",
+        "detail": "opened #3248 ",
         "kind": "pr",
         "repo": "openfga/openfga"
       },
@@ -147,7 +147,7 @@
       },
       {
         "at": "2026-07-31T12:18:25Z",
-        "detail": "#45 ",
+        "detail": "merged #45 ",
         "kind": "pr",
         "repo": "yxshwanth/Interlock"
       },
@@ -159,7 +159,7 @@
       },
       {
         "at": "2026-07-31T12:16:17Z",
-        "detail": "#45 ",
+        "detail": "opened #45 ",
         "kind": "pr",
         "repo": "yxshwanth/Interlock"
       },
@@ -177,7 +177,7 @@
       },
       {
         "at": "2026-07-31T04:44:56Z",
-        "detail": "#44 ",
+        "detail": "merged #44 ",
         "kind": "pr",
         "repo": "yxshwanth/Interlock"
       },
@@ -189,7 +189,7 @@
       },
       {
         "at": "2026-07-31T04:43:57Z",
-        "detail": "#44 ",
+        "detail": "opened #44 ",
         "kind": "pr",
         "repo": "yxshwanth/Interlock"
       },
@@ -207,7 +207,7 @@
       },
       {
         "at": "2026-07-30T18:41:08Z",
-        "detail": "#43 ",
+        "detail": "merged #43 ",
         "kind": "pr",
         "repo": "yxshwanth/Interlock"
       },
@@ -219,7 +219,7 @@
       },
       {
         "at": "2026-07-30T18:38:05Z",
-        "detail": "#43 ",
+        "detail": "opened #43 ",
         "kind": "pr",
         "repo": "yxshwanth/Interlock"
       },
@@ -237,14 +237,14 @@
       },
       {
         "at": "2026-07-30T18:28:29Z",
-        "detail": "#42 ",
+        "detail": "merged #42 ",
         "kind": "pr",
         "repo": "yxshwanth/Interlock"
       }
     ],
     "tally": {
       "comment": 8,
-      "commit": 55,
+      "commit": 56,
       "create": 8,
       "issue": 1,
       "pr": 15,
