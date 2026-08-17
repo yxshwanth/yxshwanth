@@ -4,10 +4,6 @@
   <img alt="yxshwanth's GitHub profile" src="dark_mode.svg" width="100%" />
 </picture>
 
-<pre>
-yxshwanth@systems:~$ whoami
-</pre>
-
 **Backend engineer** building production systems in Go, Python, Java, and TypeScript.  
 I care about the unglamorous parts — latency budgets, consistency edges, and what breaks at 10× traffic.
 
@@ -19,15 +15,17 @@ I care about the unglamorous parts — latency budgets, consistency edges, and w
   <a href="https://github.com/yxshwanth"><img src="https://img.shields.io/badge/github-yxshwanth-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
 </p>
 
----
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/impact-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/impact-light.svg" />
+  <img alt="API P95 cut from 1.2s to 480ms · 10K+ RPS authorization checks · p99 2.1ms webhook ingest · 100K+ transactions monitored monthly" src="assets/impact-dark.svg" width="100%" />
+</picture>
 
-### lately
-
-| | |
-| :--- | :--- |
-| **Credible Data** | Shipped Atlas backend — SSE chat, Malloy over Postgres/Neo4j/BigQuery; cut API P95 **1.2s → 480ms** |
-| **Interlock** | eBPF + Go MCP firewall that stops AI agents from exfiltrating secrets |
-| **Open source** | PRs in **Auth0 OpenFGA** & **Google Malloy** (incl. Check API consistency-token fix) |
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/stack-light.svg" />
+  <img alt="Stack laid out along a request path — edge: gRPC, REST, SSE, OAuth2/JWT, rate limiting · services: Go, Python, Java, Rust, TypeScript, C/eBPF · cache: Redis, singleflight, LRU + TTL, idempotency · state: Postgres, CockroachDB, Neo4j, DuckDB, BigQuery · Kafka event bus · Kubernetes, Docker, AWS, GCP, Terraform, GitHub Actions · OpenTelemetry, Prometheus, Grafana, Jaeger" src="assets/stack-dark.svg" width="100%" />
+</picture>
 
 ---
 
@@ -37,39 +35,35 @@ I care about the unglamorous parts — latency budgets, consistency edges, and w
 <tr>
 <td width="50%" valign="top">
 
-**[Interlock](https://github.com/yxshwanth/Interlock)**  
-`Go` `eBPF` `Kubernetes`
+**[Zenith](https://github.com/yxshwanth/zenith)** · `Go` `CockroachDB` `gRPC`
 
-Runtime exfiltration firewall for AI agents.  
-MCP proxy + syscall tracing; ~0.5ms overhead on sensitive reads.
+Zanzibar-style ReBAC across 10K+ tenants.  
+**sub-10ms P95** · **10K+ RPS** under k6
 
 </td>
 <td width="50%" valign="top">
 
-**[Dispatch](https://github.com/yxshwanth/Dispatch)**  
-`Go` `Kafka` `Postgres` `Redis`
+**[Dispatch](https://github.com/yxshwanth/Dispatch)** · `Go` `Kafka` `Postgres` `Redis`
 
 Multi-tenant webhook delivery with honest circuit breakers.  
-Ingest p99 **2.1ms** · delivery p99 **~2.5ms**
+Ingest **p99 2.1ms** · delivery **p99 ~2.5ms**
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-**[Zenith](https://github.com/yxshwanth/zenith)**  
-`Go` `CockroachDB` `gRPC`
+**[Interlock](https://github.com/yxshwanth/Interlock)** · `Go` `eBPF` `Kubernetes`
 
-Zanzibar-style ReBAC across 10K+ tenants.  
-**sub-10ms P95** at **10K+ RPS** (k6)
+Runtime exfiltration firewall for AI agents — MCP proxy + syscall tracing.  
+**~0.5ms** overhead on sensitive reads
 
 </td>
 <td width="50%" valign="top">
 
-**[LineageGraph](https://github.com/yxshwanth/LineageGraph)**  
-`Python` `LangGraph` `Postgres`
+**[LineageGraph](https://github.com/yxshwanth/LineageGraph)** · `Python` `LangGraph` `Postgres`
 
-GraphRAG lineage with hallucination guards.  
+GraphRAG data lineage with hallucination guards.  
 Semantic search **&lt;200ms** · graph depth=3 **&lt;50ms**
 
 </td>
@@ -78,46 +72,25 @@ Semantic search **&lt;200ms** · graph depth=3 **&lt;50ms**
 
 ---
 
-### stack
+### recent contributions
 
-```text
-languages    Go · Python · Java · TypeScript · Rust · SQL · C (eBPF)
-systems      gRPC · Kafka · Redis · Postgres · CockroachDB · Neo4j
-runtime      Kubernetes · Docker · AWS (EKS) · GCP (Cloud Run)
-observe      OpenTelemetry · Prometheus · Grafana · Jaeger
-security     eBPF · OAuth2 / JWT · HMAC · OCSF / SIEM
-```
-
-<p align="left">
-  <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java" />
-  <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust" />
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white" alt="Kafka" />
-  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes" />
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/activity-light.svg" />
+  <img alt="Recent public GitHub contributions — merged pull requests, reviews, issues, pushes and releases across my repos and upstream projects" src="assets/activity-dark.svg" width="100%" />
+</picture>
 
 ---
 
 ### experience
 
 **Software Engineer — Credible Data** · *Aug 2025 – May 2026* · Boulder, CO  
-Built the Express/Node backend for an AI-native data-discovery platform (SSE streaming, Auth0/JWT gateway, custom MCP server). Tuned pools & indexes to cut production P95 by **60%**. GCP + GitHub Actions with health-check rollbacks.
+Express/Node backend for an AI-native data-discovery platform: SSE streaming, Auth0/JWT gateway, custom MCP server, Malloy over Postgres / Neo4j / BigQuery. Tuned pools and indexes to cut production P95 **1.2s → 480ms**. GCP + GitHub Actions with health-check rollbacks.
 
 **Software Engineer Intern — IntelleWings** · *Feb 2023 – Jun 2024* · FinTech  
-Owned a Spring Boot transaction-monitoring path at **100K+/mo**, **sub-200ms**. Multi-tier Redis cache cut query latency **70%**; Jenkins/Docker/K8s cut release cycles from **5 days → 3**.
+Owned a Spring Boot transaction-monitoring path at **100K+/mo**, **sub-200ms**. Multi-tier Redis cache cut query latency **70%**; Jenkins/Docker/K8s cut release cycles **5 days → 3**.
 
----
-
-### signals
-
-<p align="center">
-  <img height="165" src="https://github-readme-stats.shion.dev/api?username=yxshwanth&show_icons=true&hide_rank=true&include_all_commits=true&count_private=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=79c0ff&text_color=c9d1d9" alt="GitHub stats" />
-  &nbsp;
-  <img height="165" src="https://github-readme-stats.shion.dev/api/top-langs/?username=yxshwanth&layout=compact&langs_count=6&theme=dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9" alt="Top languages" />
-</p>
+**Open source** — merged PRs in [Auth0 OpenFGA](https://github.com/openfga/openfga) and [Google Malloy](https://github.com/malloydata/malloy), including a Check API consistency-token fix.
 
 ---
 
@@ -126,9 +99,13 @@ Owned a Spring Boot transaction-monitoring path at **100K+/mo**, **sub-200ms**. 
 </p>
 
 <p align="center">
-  <a href="mailto:yashwanth.apply@gmail.com">email</a>
+  <a href="mailto:me@yashwanthreddymali.com">email</a>
   ·
   <a href="https://linkedin.com/in/yashwanth-mali">linkedin</a>
   ·
   <a href="https://github.com/yxshwanth">github</a>
+</p>
+
+<p align="center">
+  <sub>every graphic above is generated by <a href="assets/render.py">assets/render.py</a> and redrawn daily by <a href="../../actions/workflows/refresh-profile.yml">GitHub Actions</a></sub>
 </p>

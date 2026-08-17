@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1125" height="372" viewBox="0 0 1125 372" role="img" aria-label="Stack map along a request path: edge (gRPC, REST, SSE, OAuth2/JWT), services (Go, Python, Java, Rust, TypeScript, eBPF), cache (Redis, singleflight, LRU), state (Postgres, CockroachDB, Neo4j, DuckDB, BigQuery), Kafka event bus, plus platform and observability tooling">
+  <rect x="0.5" y="0.5" width="1124" height="371" rx="8" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="32" y="40" fill="#59636e" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="start">how a request moves through what i build</text>
+  <text x="1093" y="40" fill="#818b98" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="11" font-weight="normal" text-anchor="end">left to right, one request</text>
+  <text x="42" y="66" fill="#0969da" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="11" font-weight="600" text-anchor="start" letter-spacing="1.6">EDGE</text>
+  <text x="268" y="66" fill="#818b98" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="11" font-weight="normal" text-anchor="end">accept</text>
+  <rect x="40" y="78" width="230" height="152" rx="6" fill="#f6f8fa" stroke="#d0d7de"/>
+  <rect x="52.0" y="92" width="99.0" height="28" rx="5" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="101.5" y="111" fill="#1f2328" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="normal" text-anchor="middle">gRPC</text>
+  <rect x="159.0" y="92" width="99.0" height="28" rx="5" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="208.5" y="111" fill="#1f2328" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="normal" text-anchor="middle">REST</text>
+  <rect x="52.0" y="126" width="99.0" height="28" rx="5" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="101.5" y="145" fill="#1f2328" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="normal" text-anchor="middle">SSE</text>
+  <rect x="159.0" y="126" width="99.0" height="28" rx="5" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="208.5" y="145" fill="#1f2328" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="normal" text-anchor="middle">HMAC</text>
+  <rect x="52" y="160" width="206" height="28" rx="5" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="155.0" y="179" fill="#1f2328" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="normal" text-anchor="middle">OAuth2 / JWT</text>
+  <rect x="52" y="194" width="206" height="28" rx="5" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="155.0" y="213" fill="#1f2328" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="normal" text-anchor="middle">rate limiting</text>
+  <path d="M278.0 154.0 h20 m-7 -6 l7 6 l-7 6" stroke="#818b98" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="314" y="66" fill="#0969da" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="11" font-weight="600" text-anchor="start" letter-spacing="1.6">SERVICES</text>
+  <text x="540" y="66" fill="#818b98" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="11" font-weight="normal" text-anchor="end">decide</text>
+  <rect x="312" y="78" width="230" height="152" rx="6" fill="#f6f8fa" stroke="#d0d7de"/>
+  <rect x="324.0" y="92" width="99.0" height="28" rx="5" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="373.5" y="111" fill="#1f2328" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="normal" text-anchor="middle">Go</text>
+  <rect x="431.0" y="92" width="99.0" height="28" rx="5" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="480.5" y="111" fill="#1f2328" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="normal" text-anchor="middle">Python</text>
+  <rect x="324.0" y="126" width="99.0" height="28" rx="5" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="373.5" y="145" fill="#1f2328" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="normal" text-anchor="middle">Java</text>
+  <rect x="431.0" y="126" width="99.0" height="28" rx="5" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="480.5" y="145" fill="#1f2328" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="normal" text-anchor="middle">Rust</text>
+  <rect x="324" y="160" width="206" height="28" rx="5" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="427.0" y="179" fill="#1f2328" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="normal" text-anchor="middle">TypeScript</text>
+  <rect x="324" y="194" width="206" height="28" rx="5" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="427.0" y="213" fill="#1f2328" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="normal" text-anchor="middle">C · eBPF</text>
+  <path d="M550.0 154.0 h20 m-7 -6 l7 6 l-7 6" stroke="#818b98" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="586" y="66" fill="#0969da" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="11" font-weight="600" text-anchor="start" letter-spacing="1.6">CACHE</text>
+  <text x="812" y="66" fill="#818b98" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="11" font-weight="normal" text-anchor="end">absorb</text>
+  <rect x="584" y="78" width="230" height="152" rx="6" fill="#f6f8fa" stroke="#d0d7de"/>
+  <rect x="596" y="92" width="206" height="28" rx="5" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="699.0" y="111" fill="#1f2328" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="normal" text-anchor="middle">Redis</text>
+  <rect x="596" y="126" width="206" height="28" rx="5" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="699.0" y="145" fill="#1f2328" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="normal" text-anchor="middle">singleflight</text>
+  <rect x="596" y="160" width="206" height="28" rx="5" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="699.0" y="179" fill="#1f2328" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="normal" text-anchor="middle">LRU + TTL</text>
+  <rect x="596" y="194" width="206" height="28" rx="5" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="699.0" y="213" fill="#1f2328" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="normal" text-anchor="middle">idempotency</text>
+  <path d="M822.0 154.0 h20 m-7 -6 l7 6 l-7 6" stroke="#818b98" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="858" y="66" fill="#0969da" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="11" font-weight="600" text-anchor="start" letter-spacing="1.6">STATE</text>
+  <text x="1084" y="66" fill="#818b98" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="11" font-weight="normal" text-anchor="end">persist</text>
+  <rect x="856" y="78" width="230" height="152" rx="6" fill="#f6f8fa" stroke="#d0d7de"/>
+  <rect x="868" y="92" width="206" height="28" rx="5" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="971.0" y="111" fill="#1f2328" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="normal" text-anchor="middle">Postgres</text>
+  <rect x="868" y="126" width="206" height="28" rx="5" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="971.0" y="145" fill="#1f2328" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="normal" text-anchor="middle">CockroachDB</text>
+  <rect x="868.0" y="160" width="99.0" height="28" rx="5" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="917.5" y="179" fill="#1f2328" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="normal" text-anchor="middle">Neo4j</text>
+  <rect x="975.0" y="160" width="99.0" height="28" rx="5" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="1024.5" y="179" fill="#1f2328" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="normal" text-anchor="middle">DuckDB</text>
+  <rect x="868" y="194" width="206" height="28" rx="5" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="971.0" y="213" fill="#1f2328" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="normal" text-anchor="middle">BigQuery</text>
+  <rect x="32" y="244" width="1061" height="36" rx="6" fill="#f6f8fa" stroke="#d0d7de"/>
+  <path d="M44 262 h1037" stroke="#e4e8ec" stroke-width="1" stroke-dasharray="3 5" fill="none"/>
+  <rect x="44" y="250" width="168" height="24" rx="5" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="128" y="267" fill="#1a7f37" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="normal" text-anchor="middle">Kafka · event bus</text>
+  <text x="1081" y="267" fill="#59636e" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="12" font-weight="normal" text-anchor="end">outbox · DLQ · exponential backoff · circuit breakers</text>
+  <rect x="32.0" y="296" width="523.5" height="46" rx="6" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="48.0" y="316" fill="#0969da" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="11" font-weight="600" text-anchor="start" letter-spacing="1.6">PLATFORM</text>
+  <text x="48.0" y="332" fill="#59636e" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="12" font-weight="normal" text-anchor="start">Kubernetes · Docker · AWS · GCP · Terraform · GitHub Actions</text>
+  <rect x="569.5" y="296" width="523.5" height="46" rx="6" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="585.5" y="316" fill="#8250df" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="11" font-weight="600" text-anchor="start" letter-spacing="1.6">OBSERVABILITY</text>
+  <text x="585.5" y="332" fill="#59636e" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="12" font-weight="normal" text-anchor="start">OpenTelemetry · Prometheus · Grafana · Jaeger</text>
+</svg>

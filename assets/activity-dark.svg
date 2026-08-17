@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1125" height="166" viewBox="0 0 1125 166" role="img" aria-label="Recent GitHub contributions">
+  <rect x="0.5" y="0.5" width="1124" height="165" rx="8" fill="#0d1117" stroke="#30363d"/>
+  <text x="32" y="40" fill="#8b949e" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="start">recent contributions</text>
+  <text x="1093" y="40" fill="#6e7681" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="11" font-weight="normal" text-anchor="end">refreshed 2026-08-17 · public events, last 90 days</text>
+  <text x="562.5" y="142" fill="#6e7681" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="normal" text-anchor="middle">no public activity in the last 90 days</text>
+</svg>

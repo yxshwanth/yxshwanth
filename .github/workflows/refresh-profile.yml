@@ -1,0 +1,51 @@
+name: refresh profile
+
+# Redraws the README graphics from live GitHub data: uptime, repo/star/commit/
+# follower counts, and the recent-contributions feed. Commits only when the
+# rendered SVGs actually change, so quiet days leave no history noise.
+
+on:
+  schedule:
+    - cron: "23 5 * * *" # 05:23 UTC daily
+  workflow_dispatch: # manual "Run workflow" button
+  push:
+    branches: [main]
+    paths:
+      - assets/render.py
+      - assets/portrait-*.txt
+      - .github/workflows/refresh-profile.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-profile
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Render SVGs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USER: ${{ github.repository_owner }}
+        run: python3 assets/render.py
+
+      - name: Commit if anything changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A dark_mode.svg light_mode.svg assets
+          if git diff --cached --quiet; then
+            echo "nothing changed"
+            exit 0
+          fi
+          git commit -m "chore: refresh profile stats and activity [skip ci]"
+          git push
