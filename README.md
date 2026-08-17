@@ -4,6 +4,12 @@
   <img alt="yxshwanth's GitHub profile" src="dark_mode.svg" width="100%" />
 </picture>
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/activity-light.svg" />
+  <img alt="Recent public GitHub contributions — merged pull requests, reviews, issues, pushes and releases across my repos and upstream projects" src="assets/activity-dark.svg" width="100%" />
+</picture>
+
 **Backend engineer** building production systems in Go, Python, Java, and TypeScript.  
 I care about the unglamorous parts — latency budgets, consistency edges, and what breaks at 10× traffic.
 
@@ -69,16 +75,6 @@ Semantic search **&lt;200ms** · graph depth=3 **&lt;50ms**
 </td>
 </tr>
 </table>
-
----
-
-### recent contributions
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/activity-light.svg" />
-  <img alt="Recent public GitHub contributions — merged pull requests, reviews, issues, pushes and releases across my repos and upstream projects" src="assets/activity-dark.svg" width="100%" />
-</picture>
 
 ---
 
