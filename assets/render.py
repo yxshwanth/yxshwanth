@@ -216,18 +216,20 @@ def describe(ev):
             bits.append(f"pushed to {branch}")
         return "commit", repo, " · ".join(bits) or "pushed"
 
+    # the events feed frequently omits pull_request.title, so lead with the
+    # action verb — "opened #3248" beats a bare "#3248"
     if kind == "PullRequestEvent":
         pr = p.get("pull_request", {})
-        num, title = p.get("number", "?"), pr.get("title", "")
-        if p.get("action") == "closed" and pr.get("merged"):
+        num = p.get("number") or pr.get("number", "?")
+        title = pr.get("title") or ""
+        action = p.get("action", "")
+        if action == "closed" and pr.get("merged"):
             return "merged", repo, f"#{num} {title}"
-        if p.get("action") == "closed":
-            return "pr", repo, f"closed #{num} {title}"
-        return "pr", repo, f"#{num} {title}"
+        return "pr", repo, f"{action or 'opened'} #{num} {title}"
 
     if kind in ("PullRequestReviewEvent", "PullRequestReviewCommentEvent"):
-        return "review", repo, f"#{p.get('pull_request', {}).get('number', '?')} " \
-                               f"{p.get('pull_request', {}).get('title', '')}"
+        pr = p.get("pull_request", {})
+        return "review", repo, f"reviewed #{pr.get('number', '?')} {pr.get('title') or ''}"
 
     if kind == "IssuesEvent":
         i = p.get("issue", {})
