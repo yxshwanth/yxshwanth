@@ -36,9 +36,10 @@ CACHE = OUT / "data.json"
 USER = os.environ.get("GITHUB_USER", "yxshwanth")
 ANCHOR = datetime(2021, 6, 3, tzinfo=timezone.utc)  # uptime counts from here
 ROLE = "Backend Engineer"
-LOCATION = "Morgan Hill, CA"
+LOCATION = "San Jose, CA"
 LANGUAGES = "Go, Python, Java, TypeScript, SQL"
 ACTIVITY_ROWS = 6
+CANDIDATES = 40  # events kept in the cache; the feed picks from these at render time
 
 MONO = "ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace"
 SANS = "-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
@@ -200,10 +201,20 @@ def describe(ev):
     kind, repo, p = ev["type"], ev["repo"]["name"], ev.get("payload", {})
 
     if kind == "PushEvent":
+        # payload.commits is often absent on the public events feed, and
+        # distinct_size is 0 for merges and re-pushes — so degrade to the branch
         n = p.get("distinct_size") or p.get("size") or 0
         msgs = p.get("commits") or []
-        head = msgs[-1]["message"].splitlines()[0] if msgs else "no message"
-        return "commit", repo, f"{n} commit{'s' if n != 1 else ''} · {head}"
+        head = next((c["message"].splitlines()[0] for c in reversed(msgs) if c.get("message")), "")
+        branch = (p.get("ref") or "").rsplit("/", 1)[-1]
+        bits = []
+        if n:
+            bits.append(f"{n} commit{'s' if n != 1 else ''}")
+        if head:
+            bits.append(head)
+        elif branch:
+            bits.append(f"pushed to {branch}")
+        return "commit", repo, " · ".join(bits) or "pushed"
 
     if kind == "PullRequestEvent":
         pr = p.get("pull_request", {})
@@ -262,10 +273,38 @@ def fetch_activity():
         # collapse a run of pushes to the same repo into one row
         if rows and rows[-1]["kind"] == kind == "commit" and rows[-1]["repo"] == repo:
             continue
-        if len(rows) < ACTIVITY_ROWS * 2:
+        if len(rows) < CANDIDATES:
             rows.append({"kind": kind, "repo": repo, "detail": detail, "at": ev["created_at"]})
 
-    return {"rows": rows[:ACTIVITY_ROWS], "tally": tally}
+    return {"rows": rows, "tally": tally}
+
+
+# Contribution types, most interesting first. Stars and forks are not
+# contributions — they only fill space left over once these run out.
+PRIORITY = ["merged", "pr", "review", "issue", "release", "commit", "create", "comment"]
+FILLER = ["star", "fork"]
+
+
+def select_rows(rows, limit=ACTIVITY_ROWS):
+    """Guarantee one of each contribution type before filling by recency.
+
+    Events arrive newest-first. Taken strictly in order, a burst of pushes
+    buries the pull requests and reviews that are the point of the panel.
+    """
+    picked = []
+    for kind in PRIORITY:
+        newest = next((i for i, r in enumerate(rows) if r["kind"] == kind), None)
+        if newest is not None and len(picked) < limit:
+            picked.append(newest)
+
+    for pool in (PRIORITY, FILLER):
+        for i, r in enumerate(rows):
+            if len(picked) >= limit:
+                break
+            if i not in picked and r["kind"] in pool:
+                picked.append(i)
+
+    return sorted((rows[i] for i in picked), key=lambda r: r["at"], reverse=True)[:limit]
 
 
 def load_data():
@@ -518,7 +557,7 @@ TALLY_ORDER = [("merged", "merged"), ("pr", "PRs"), ("review", "reviews"),
 
 def activity(c, data):
     act = data.get("activity", {})
-    rows, tally = act.get("rows", []), act.get("tally", {})
+    rows, tally = select_rows(act.get("rows", [])), act.get("tally", {})
     row_h, top = 32, 118
     h = top + max(1, len(rows)) * row_h + 16
 
