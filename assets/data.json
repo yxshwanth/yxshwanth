@@ -2,6 +2,12 @@
   "activity": {
     "rows": [
       {
+        "at": "2026-08-18T13:59:18Z",
+        "detail": "pushed to check-cancelled-context-race",
+        "kind": "commit",
+        "repo": "yxshwanth/openfga"
+      },
+      {
         "at": "2026-08-17T05:34:07Z",
         "detail": "pushed to main",
         "kind": "commit",
@@ -234,17 +240,11 @@
         "detail": "pushed to main",
         "kind": "commit",
         "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-07-30T18:28:29Z",
-        "detail": "merged #42 ",
-        "kind": "pr",
-        "repo": "yxshwanth/Interlock"
       }
     ],
     "tally": {
       "comment": 8,
-      "commit": 57,
+      "commit": 58,
       "create": 8,
       "issue": 1,
       "pr": 15,
@@ -258,5 +258,5 @@
     "repos": 22,
     "stars": 5
   },
-  "updated": "2026-08-18"
+  "updated": "2026-08-19"
 }
