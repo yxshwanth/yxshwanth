@@ -2,6 +2,12 @@
   "activity": {
     "rows": [
       {
+        "at": "2026-08-22T07:04:42Z",
+        "detail": "starred",
+        "kind": "star",
+        "repo": "linkedin/venice"
+      },
+      {
         "at": "2026-08-22T04:41:41Z",
         "detail": "pushed to main",
         "kind": "commit",
@@ -234,12 +240,6 @@
         "detail": "pushed to main",
         "kind": "commit",
         "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-07-30T18:38:05Z",
-        "detail": "opened #43 ",
-        "kind": "pr",
-        "repo": "yxshwanth/Interlock"
       }
     ],
     "tally": {
@@ -249,7 +249,7 @@
       "issue": 1,
       "pr": 15,
       "review": 4,
-      "star": 6
+      "star": 7
     }
   },
   "stats": {
@@ -258,5 +258,5 @@
     "repos": 23,
     "stars": 5
   },
-  "updated": "2026-08-22"
+  "updated": "2026-08-23"
 }
