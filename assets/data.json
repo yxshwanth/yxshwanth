@@ -2,6 +2,12 @@
   "activity": {
     "rows": [
       {
+        "at": "2026-08-24T17:56:43Z",
+        "detail": "pushed to check-cancelled-context-race",
+        "kind": "commit",
+        "repo": "yxshwanth/openfga"
+      },
+      {
         "at": "2026-08-23T10:02:32Z",
         "detail": "starred",
         "kind": "star",
@@ -234,20 +240,14 @@
         "detail": "new branch feat/roadmap-operability-5-12-13",
         "kind": "create",
         "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-07-31T04:42:11Z",
-        "detail": "pushed to align-discrepancy-fixes",
-        "kind": "commit",
-        "repo": "yxshwanth/Interlock"
       }
     ],
     "tally": {
-      "comment": 9,
-      "commit": 53,
-      "create": 8,
+      "comment": 7,
+      "commit": 50,
+      "create": 7,
       "issue": 1,
-      "pr": 15,
+      "pr": 14,
       "review": 4,
       "star": 8
     }
@@ -258,5 +258,5 @@
     "repos": 23,
     "stars": 5
   },
-  "updated": "2026-08-24"
+  "updated": "2026-08-25"
 }
