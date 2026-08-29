@@ -5,7 +5,7 @@
 
 All text is IBM Plex. GitHub allows no CSS in a README and blocks external
 requests from an <img>-loaded SVG, so each SVG embeds its own subset of the
-typeface as a base64 woff2 — only the glyphs that file actually draws, which
+typeface as a base64 woff2, only the glyphs that file actually draws, which
 keeps the payload to a few KB per panel. Fonts are vendored in assets/fonts
 (SIL OFL 1.1, see assets/fonts/LICENSE.txt) so CI can re-render offline.
 
@@ -15,7 +15,7 @@ rather than guessing at an average character width.
 Live data (uptime, repo/star/commit/follower counts, recent contributions) is
 pulled from the GitHub API and cached to assets/data.json. If the API is
 unreachable or rate-limited, the cache is reused so the profile never renders
-blank or zeroed — a failed refresh is a no-op, not a regression.
+blank or zeroed. A failed refresh is a no-op, not a regression.
 
 Set GITHUB_TOKEN to raise the rate limit (the workflow passes the built-in one).
 Set SKIP_FETCH=1 to render purely from cache.
@@ -37,7 +37,7 @@ CACHE = OUT / "data.json"
 FONT_DIR = OUT / "fonts"
 
 # --------------------------------------------------------------------------- #
-# config — the only things worth hand-editing
+# config: the only things worth hand-editing
 # --------------------------------------------------------------------------- #
 
 USER = os.environ.get("GITHUB_USER", "yxshwanth")
@@ -120,7 +120,7 @@ def wrap(s, maxw, size, face):
 def subset_b64(face, chars):
     """Cut the face down to `chars` and return base64 woff2.
 
-    Layout features are dropped so the browser applies plain advances — exactly
+    Layout features are dropped so the browser applies plain advances, exactly
     what `width()` measured. With kerning left in, text would render slightly
     narrower than the layout assumes.
     """
@@ -165,7 +165,7 @@ class Doc:
         )
 
     def spans(self, x, y, parts, size=16, face="mono"):
-        """One <text> of coloured tspans — keeps monospace columns aligned."""
+        """One <text> of coloured tspans, keeping monospace columns aligned."""
         fam, weight = self._family(face)
         inner = ""
         for s, fill in parts:
@@ -215,7 +215,7 @@ def chip(d, x, y, label, colour, c, size=12, face="mono", pad=11, h=24):
 
 
 # --------------------------------------------------------------------------- #
-# github data — fetched, cached, and never allowed to break the render
+# github data: fetched, cached, and never allowed to break the render
 # --------------------------------------------------------------------------- #
 
 
@@ -252,7 +252,7 @@ def fetch_stats():
                 if con.get("login", "").lower() == USER.lower():
                     commits += con.get("contributions", 0)
         except Exception:
-            continue  # unreadable repo — one bad repo must not sink the refresh
+            continue  # unreadable repo; one bad repo must not sink the refresh
 
     return {
         "repos": user["public_repos"],
@@ -268,7 +268,7 @@ def describe(ev):
 
     if kind == "PushEvent":
         # payload.commits is often absent on the public events feed, and
-        # distinct_size is 0 for merges and re-pushes — so degrade to the branch
+        # distinct_size is 0 for merges and re-pushes, so degrade to the branch
         n = p.get("distinct_size") or p.get("size") or 0
         msgs = p.get("commits") or []
         head = next((c["message"].splitlines()[0] for c in reversed(msgs) if c.get("message")), "")
@@ -283,7 +283,7 @@ def describe(ev):
         return "commit", repo, " · ".join(bits) or "pushed"
 
     # the events feed frequently omits pull_request.title, so lead with the
-    # action verb — "opened #3248" beats a bare "#3248"
+    # action verb: "opened #3248" beats a bare "#3248"
     if kind == "PullRequestEvent":
         pr = p.get("pull_request", {})
         num = p.get("number") or pr.get("number", "?")
@@ -343,7 +343,7 @@ def fetch_activity():
 
 
 # Contribution types, most interesting first. Stars and forks are not
-# contributions — they only fill space left over once these run out.
+# contributions; they only fill space left over once these run out.
 PRIORITY = ["merged", "pr", "review", "issue", "release", "commit", "create", "comment"]
 FILLER = ["star", "fork"]
 
@@ -377,7 +377,7 @@ def load_data():
         try:
             data[name] = fn()
         except Exception as e:  # a failed refresh must be a no-op, never a regression
-            print(f"  ! {name} fetch failed ({e.__class__.__name__}: {e}) — keeping cache")
+            print(f"  ! {name} fetch failed ({e.__class__.__name__}: {e}), keeping cache")
     data["updated"] = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     CACHE.write_text(json.dumps(data, indent=2, sort_keys=True) + "\n")
     return data
@@ -409,7 +409,7 @@ def ago(iso, now=None):
 
 
 # --------------------------------------------------------------------------- #
-# hero — ASCII portrait + neofetch-style card
+# hero: ASCII portrait + neofetch-style card
 # --------------------------------------------------------------------------- #
 
 
@@ -468,7 +468,7 @@ def hero(theme, c, data):
 # --------------------------------------------------------------------------- #
 
 HEADLINE = "Backend engineer building production systems in Go, Python, Java, and TypeScript."
-SUBLINE = ("I care about the unglamorous parts — latency budgets, consistency edges, "
+SUBLINE = ("I care about the unglamorous parts: latency budgets, consistency edges, "
            "and what breaks at 10× traffic.")
 STATUS = ["MS CS @ CU Boulder", "GPA 3.9", "Open to full-time backend / systems roles"]
 
@@ -552,7 +552,7 @@ RAILS = [
 
 
 def stack(c, _data=None):
-    alt = "Stack along a request path — " + " | ".join(
+    alt = "Stack along a request path: " + " | ".join(
         f"{n} ({', '.join(i for r in rows for i in r)})" for n, _, rows in COLUMNS)
     d = Doc(W, 372, alt)
     d.rect(0.5, 0.5, W - 1, 371, c["bg"], c["border"], r=8)
@@ -625,12 +625,12 @@ def activity(c, data):
     h = top + max(1, len(rows)) * row_h + 16
 
     alt = "Recent GitHub contributions: " + "; ".join(
-        f"{KINDS.get(r['kind'], ('activity',))[0]} in {r['repo']} — {trunc(r['detail'], 72)}"
+        f"{KINDS.get(r['kind'], ('activity',))[0]} in {r['repo']}: {trunc(r['detail'], 72)}"
         for r in rows) if rows else "Recent GitHub contributions"
     d = Doc(W, h, alt)
     d.rect(0.5, 0.5, W - 1, h - 1, c["bg"], c["border"], r=8)
     d.text(32, 40, "recent contributions", c["muted"], 13, "sans")
-    d.text(W - 32, 40, f"refreshed {data.get('updated', '—')} · public events, last 90 days",
+    d.text(W - 32, 40, f"refreshed {data.get('updated', 'unknown')} · public events, last 90 days",
            c["faint"], 11, "mono", "end")
 
     x = 32
@@ -666,7 +666,7 @@ def activity(c, data):
 
 
 # --------------------------------------------------------------------------- #
-# selected work — one SVG per card so each stays a clickable link
+# selected work: one SVG per card so each stays a clickable link
 # --------------------------------------------------------------------------- #
 
 WORK = [
@@ -677,7 +677,7 @@ WORK = [
      "Multi-tenant webhook delivery with honest circuit breakers.",
      "ingest p99 2.1ms · delivery p99 ~2.5ms", "green"),
     ("Interlock", ["Go", "eBPF", "Kubernetes"],
-     "Runtime exfiltration firewall for AI agents — MCP proxy plus syscall tracing.",
+     "Runtime exfiltration firewall for AI agents. MCP proxy plus syscall tracing.",
      "~0.5ms overhead on sensitive reads", "purple"),
     ("LineageGraph", ["Python", "LangGraph", "Postgres"],
      "GraphRAG data lineage with hallucination guards.",
@@ -688,7 +688,7 @@ CARD_WIDTH = 552
 
 
 def work_card(c, name, techs, blurb, metric, hue):
-    d = Doc(CARD_WIDTH, 172, f"{name} — {blurb} {metric}")
+    d = Doc(CARD_WIDTH, 172, f"{name}: {blurb} {metric}")
     d.rect(0.5, 0.5, CARD_WIDTH - 1, 171, c["bg"], c["border"], r=8)
     d.path(f"M20 16 v140", c[hue], 3, extra=' stroke-linecap="round"')
 
@@ -712,12 +712,12 @@ def work_card(c, name, techs, blurb, metric, hue):
 # --------------------------------------------------------------------------- #
 
 EXPERIENCE = [
-    ("Software Engineer — Credible Data", "Aug 2025 – May 2026 · Boulder, CO",
+    ("Software Engineer, Credible Data", "Aug 2025 – May 2026 · Boulder, CO",
      "Express/Node backend for an AI-native data-discovery platform: SSE streaming, Auth0/JWT "
      "gateway, custom MCP server, Malloy over Postgres / Neo4j / BigQuery. Tuned pools and "
      "indexes to cut production P95 1.2s → 480ms. GCP + GitHub Actions with health-check "
      "rollbacks."),
-    ("Software Engineer Intern — IntelleWings", "Feb 2023 – Jun 2024 · FinTech",
+    ("Software Engineer Intern, IntelleWings", "Feb 2023 – Jun 2024 · FinTech",
      "Owned a Spring Boot transaction-monitoring path at 100K+/mo, sub-200ms. Multi-tier Redis "
      "cache cut query latency 70%; Jenkins/Docker/K8s cut release cycles 5 days → 3."),
 ]
