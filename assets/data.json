@@ -252,6 +252,11 @@
       "star": 6
     }
   },
+  "post": {
+    "date": "31 July 2026",
+    "title": "Interlock: a runtime firewall for AI agents that assumes prompt injection already won",
+    "url": "https://yashwanthreddymali.com/blog/interlock-exfiltration-at-runtime/"
+  },
   "stats": {
     "commits": 161,
     "followers": 18,
