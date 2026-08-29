@@ -2,6 +2,12 @@
   "activity": {
     "rows": [
       {
+        "at": "2026-08-29T07:53:18Z",
+        "detail": "pushed to main",
+        "kind": "commit",
+        "repo": "yxshwanth/yxshwanth"
+      },
+      {
         "at": "2026-08-27T22:52:15Z",
         "detail": "new branch docs/readme-rewrite",
         "kind": "create",
@@ -234,17 +240,11 @@
         "detail": "starred",
         "kind": "star",
         "repo": "obot-platform/obot"
-      },
-      {
-        "at": "2026-08-04T23:46:02Z",
-        "detail": "starred",
-        "kind": "star",
-        "repo": "cilium/tetragon"
       }
     ],
     "tally": {
       "comment": 5,
-      "commit": 39,
+      "commit": 40,
       "create": 8,
       "fork": 1,
       "pr": 12,
@@ -258,7 +258,7 @@
     "url": "https://yashwanthreddymali.com/blog/interlock-exfiltration-at-runtime/"
   },
   "stats": {
-    "commits": 161,
+    "commits": 162,
     "followers": 18,
     "repos": 25,
     "stars": 5
