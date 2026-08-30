@@ -2,6 +2,18 @@
   "activity": {
     "rows": [
       {
+        "at": "2026-08-29T21:21:18Z",
+        "detail": "pushed to main",
+        "kind": "commit",
+        "repo": "yxshwanth/yxshwanth"
+      },
+      {
+        "at": "2026-08-29T07:52:30Z",
+        "detail": "pushed to main",
+        "kind": "commit",
+        "repo": "yxshwanth/portfolio"
+      },
+      {
         "at": "2026-08-29T07:53:18Z",
         "detail": "pushed to main",
         "kind": "commit",
@@ -228,26 +240,14 @@
         "detail": "#3214 Flaky test: TestV2CheckMetadata/cancelled_context_returns_error_not_fallback races on context cancellation",
         "kind": "comment",
         "repo": "openfga/openfga"
-      },
-      {
-        "at": "2026-08-05T16:47:38Z",
-        "detail": "pushed to main",
-        "kind": "commit",
-        "repo": "yxshwanth/portfolio"
-      },
-      {
-        "at": "2026-08-05T12:30:29Z",
-        "detail": "starred",
-        "kind": "star",
-        "repo": "obot-platform/obot"
       }
     ],
     "tally": {
       "comment": 5,
-      "commit": 40,
-      "create": 8,
+      "commit": 34,
+      "create": 7,
       "fork": 1,
-      "pr": 12,
+      "pr": 8,
       "review": 4,
       "star": 6
     }
@@ -263,5 +263,5 @@
     "repos": 25,
     "stars": 5
   },
-  "updated": "2026-08-29"
+  "updated": "2026-08-30"
 }
