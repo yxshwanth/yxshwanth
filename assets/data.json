@@ -244,12 +244,12 @@
     ],
     "tally": {
       "comment": 5,
-      "commit": 35,
+      "commit": 34,
       "create": 7,
       "fork": 1,
       "pr": 12,
       "review": 4,
-      "star": 5
+      "star": 4
     }
   },
   "post": {
@@ -258,10 +258,10 @@
     "url": "https://yashwanthreddymali.com/blog/interlock-exfiltration-at-runtime/"
   },
   "stats": {
-    "commits": 167,
+    "commits": 168,
     "followers": 17,
     "repos": 25,
     "stars": 5
   },
-  "updated": "2026-09-04"
+  "updated": "2026-09-05"
 }
