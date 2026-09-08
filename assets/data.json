@@ -243,12 +243,11 @@
       }
     ],
     "tally": {
-      "comment": 3,
-      "commit": 33,
+      "comment": 2,
+      "commit": 31,
       "create": 6,
       "fork": 1,
       "pr": 11,
-      "review": 4,
       "star": 3
     }
   },
@@ -263,5 +262,5 @@
     "repos": 25,
     "stars": 5
   },
-  "updated": "2026-09-07"
+  "updated": "2026-09-08"
 }
