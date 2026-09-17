@@ -2,6 +2,54 @@
   "activity": {
     "rows": [
       {
+        "at": "2026-09-16T13:52:23Z",
+        "detail": "pushed to listusers-deadline-warning",
+        "kind": "commit",
+        "repo": "yxshwanth/openfga"
+      },
+      {
+        "at": "2026-09-16T13:41:07Z",
+        "detail": "reviewed #3293 ",
+        "kind": "review",
+        "repo": "openfga/openfga"
+      },
+      {
+        "at": "2026-09-16T13:32:42Z",
+        "detail": "#3310 Warn the caller when ListUsers results are truncated by the deadline",
+        "kind": "comment",
+        "repo": "openfga/openfga"
+      },
+      {
+        "at": "2026-09-16T13:32:41Z",
+        "detail": "#3293 Warn the caller when ListObjects results are truncated by the deadline",
+        "kind": "comment",
+        "repo": "openfga/openfga"
+      },
+      {
+        "at": "2026-09-16T13:32:36Z",
+        "detail": "opened #3311 ",
+        "kind": "pr",
+        "repo": "openfga/openfga"
+      },
+      {
+        "at": "2026-09-16T13:32:34Z",
+        "detail": "new branch feat/listusers-deadline-warning",
+        "kind": "create",
+        "repo": "yxshwanth/openfga"
+      },
+      {
+        "at": "2026-09-16T13:31:00Z",
+        "detail": "opened #3310 Warn the caller when ListUsers results are truncated by the deadline",
+        "kind": "issue",
+        "repo": "openfga/openfga"
+      },
+      {
+        "at": "2026-09-16T13:30:58Z",
+        "detail": "reviewed #3293 ",
+        "kind": "review",
+        "repo": "openfga/openfga"
+      },
+      {
         "at": "2026-09-08T23:18:09Z",
         "detail": "pushed to main",
         "kind": "commit",
@@ -192,44 +240,16 @@
         "detail": "#15128 BUG: LRU block cache can spin forever in MaintainPoolSize",
         "kind": "comment",
         "repo": "facebook/rocksdb"
-      },
-      {
-        "at": "2026-08-22T07:04:42Z",
-        "detail": "starred",
-        "kind": "star",
-        "repo": "linkedin/venice"
-      },
-      {
-        "at": "2026-08-22T04:41:41Z",
-        "detail": "pushed to main",
-        "kind": "commit",
-        "repo": "yxshwanth/neetcode-submissions"
-      },
-      {
-        "at": "2026-08-22T04:41:17Z",
-        "detail": "new branch main",
-        "kind": "create",
-        "repo": "yxshwanth/neetcode-submissions"
-      },
-      {
-        "at": "2026-08-18T13:59:18Z",
-        "detail": "pushed to check-cancelled-context-race",
-        "kind": "commit",
-        "repo": "yxshwanth/openfga"
-      },
-      {
-        "at": "2026-08-17T05:34:07Z",
-        "detail": "pushed to main",
-        "kind": "commit",
-        "repo": "yxshwanth/yxshwanth"
       }
     ],
     "tally": {
-      "comment": 2,
-      "commit": 24,
-      "create": 6,
+      "comment": 4,
+      "commit": 22,
+      "create": 7,
       "fork": 1,
-      "pr": 11,
+      "issue": 1,
+      "pr": 12,
+      "review": 2,
       "star": 2
     }
   },
@@ -244,5 +264,5 @@
     "repos": 25,
     "stars": 5
   },
-  "updated": "2026-09-16"
+  "updated": "2026-09-17"
 }
