@@ -2,6 +2,12 @@
   "activity": {
     "rows": [
       {
+        "at": "2026-09-18T23:06:11Z",
+        "detail": "starred",
+        "kind": "star",
+        "repo": "apache/datafusion"
+      },
+      {
         "at": "2026-09-16T17:30:36Z",
         "detail": "pushed to listusers-deadline-warning",
         "kind": "commit",
@@ -234,12 +240,6 @@
         "detail": "starred",
         "kind": "star",
         "repo": "kubernetes/kubernetes"
-      },
-      {
-        "at": "2026-08-23T09:59:42Z",
-        "detail": "#15128 BUG: LRU block cache can spin forever in MaintainPoolSize",
-        "kind": "comment",
-        "repo": "facebook/rocksdb"
       }
     ],
     "tally": {
@@ -250,7 +250,7 @@
       "issue": 1,
       "pr": 12,
       "review": 2,
-      "star": 2
+      "star": 3
     }
   },
   "post": {
@@ -260,9 +260,9 @@
   },
   "stats": {
     "commits": 170,
-    "followers": 16,
+    "followers": 15,
     "repos": 25,
     "stars": 5
   },
-  "updated": "2026-09-18"
+  "updated": "2026-09-19"
 }
