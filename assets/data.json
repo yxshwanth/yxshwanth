@@ -2,6 +2,12 @@
   "activity": {
     "rows": [
       {
+        "at": "2026-09-22T16:46:33Z",
+        "detail": "starred",
+        "kind": "star",
+        "repo": "poteto/hiring-without-whiteboards"
+      },
+      {
         "at": "2026-09-18T23:06:11Z",
         "detail": "starred",
         "kind": "star",
@@ -234,16 +240,10 @@
         "detail": "pushed to check-cancelled-context-race",
         "kind": "commit",
         "repo": "yxshwanth/openfga"
-      },
-      {
-        "at": "2026-08-23T10:02:32Z",
-        "detail": "starred",
-        "kind": "star",
-        "repo": "kubernetes/kubernetes"
       }
     ],
     "tally": {
-      "comment": 4,
+      "comment": 3,
       "commit": 22,
       "create": 6,
       "fork": 1,
@@ -260,9 +260,9 @@
   },
   "stats": {
     "commits": 170,
-    "followers": 15,
+    "followers": 16,
     "repos": 25,
     "stars": 5
   },
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
 }
