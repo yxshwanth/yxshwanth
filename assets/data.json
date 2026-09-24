@@ -234,17 +234,11 @@
         "detail": "forked",
         "kind": "fork",
         "repo": "facebook/rocksdb"
-      },
-      {
-        "at": "2026-08-24T17:56:43Z",
-        "detail": "pushed to check-cancelled-context-race",
-        "kind": "commit",
-        "repo": "yxshwanth/openfga"
       }
     ],
     "tally": {
       "comment": 3,
-      "commit": 22,
+      "commit": 21,
       "create": 6,
       "fork": 1,
       "issue": 1,
@@ -260,9 +254,9 @@
   },
   "stats": {
     "commits": 170,
-    "followers": 16,
+    "followers": 17,
     "repos": 25,
     "stars": 5
   },
-  "updated": "2026-09-23"
+  "updated": "2026-09-24"
 }
