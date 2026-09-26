@@ -204,24 +204,12 @@
         "detail": "pushed to main",
         "kind": "commit",
         "repo": "yxshwanth/ratchet"
-      },
-      {
-        "at": "2026-08-26T15:12:26Z",
-        "detail": "new branch main",
-        "kind": "create",
-        "repo": "yxshwanth/ratchet"
-      },
-      {
-        "at": "2026-08-25T20:40:58Z",
-        "detail": "new branch fix-lru-maintain-pool-size-spin",
-        "kind": "create",
-        "repo": "yxshwanth/rocksdb"
       }
     ],
     "tally": {
       "comment": 2,
-      "commit": 21,
-      "create": 6,
+      "commit": 20,
+      "create": 4,
       "issue": 1,
       "pr": 11,
       "review": 2,
@@ -239,5 +227,5 @@
     "repos": 25,
     "stars": 5
   },
-  "updated": "2026-09-25"
+  "updated": "2026-09-26"
 }
