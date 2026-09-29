@@ -2,6 +2,12 @@
   "activity": {
     "rows": [
       {
+        "at": "2026-09-28T12:45:08Z",
+        "detail": "starred",
+        "kind": "star",
+        "repo": "NVIDIA/OpenShell"
+      },
+      {
         "at": "2026-09-22T16:46:33Z",
         "detail": "starred",
         "kind": "star",
@@ -162,28 +168,16 @@
         "detail": "pushed to main",
         "kind": "commit",
         "repo": "yxshwanth/yxshwanth"
-      },
-      {
-        "at": "2026-08-29T07:52:30Z",
-        "detail": "pushed to main",
-        "kind": "commit",
-        "repo": "yxshwanth/portfolio"
-      },
-      {
-        "at": "2026-08-29T07:53:18Z",
-        "detail": "pushed to main",
-        "kind": "commit",
-        "repo": "yxshwanth/yxshwanth"
       }
     ],
     "tally": {
       "comment": 2,
-      "commit": 16,
+      "commit": 14,
       "create": 3,
       "issue": 1,
       "pr": 9,
       "review": 2,
-      "star": 2
+      "star": 3
     }
   },
   "post": {
@@ -197,5 +191,5 @@
     "repos": 25,
     "stars": 5
   },
-  "updated": "2026-09-28"
+  "updated": "2026-09-29"
 }
