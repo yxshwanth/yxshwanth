@@ -90,32 +90,14 @@
         "detail": "pushed to main",
         "kind": "commit",
         "repo": "yxshwanth/portfolio"
-      },
-      {
-        "at": "2026-09-01T05:04:04Z",
-        "detail": "pushed to zenith-v2",
-        "kind": "commit",
-        "repo": "yxshwanth/zenith"
-      },
-      {
-        "at": "2026-09-01T05:05:22Z",
-        "detail": "merged #2 ",
-        "kind": "pr",
-        "repo": "yxshwanth/zenith"
-      },
-      {
-        "at": "2026-09-01T05:05:13Z",
-        "detail": "opened #2 ",
-        "kind": "pr",
-        "repo": "yxshwanth/zenith"
       }
     ],
     "tally": {
       "comment": 2,
-      "commit": 10,
+      "commit": 8,
       "create": 2,
       "issue": 1,
-      "pr": 3,
+      "pr": 1,
       "review": 2,
       "star": 3
     }
@@ -131,5 +113,5 @@
     "repos": 26,
     "stars": 5
   },
-  "updated": "2026-10-01"
+  "updated": "2026-10-02"
 }
