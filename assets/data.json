@@ -2,6 +2,12 @@
   "activity": {
     "rows": [
       {
+        "at": "2026-10-08T03:50:44Z",
+        "detail": "pushed to listusers-deadline-warning",
+        "kind": "commit",
+        "repo": "yxshwanth/openfga"
+      },
+      {
         "at": "2026-10-03T22:26:41Z",
         "detail": "pushed to v0.2.0",
         "kind": "commit",
@@ -156,12 +162,6 @@
         "detail": "reviewed #3293 ",
         "kind": "review",
         "repo": "openfga/openfga"
-      },
-      {
-        "at": "2026-09-08T23:18:09Z",
-        "detail": "pushed to main",
-        "kind": "commit",
-        "repo": "yxshwanth/portfolio"
       }
     ],
     "tally": {
@@ -185,5 +185,5 @@
     "repos": 26,
     "stars": 5
   },
-  "updated": "2026-10-08"
+  "updated": "2026-10-09"
 }
