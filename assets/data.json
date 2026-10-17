@@ -120,57 +120,13 @@
         "detail": "pushed to listusers-deadline-warning",
         "kind": "commit",
         "repo": "yxshwanth/openfga"
-      },
-      {
-        "at": "2026-09-16T13:41:07Z",
-        "detail": "reviewed #3293 ",
-        "kind": "review",
-        "repo": "openfga/openfga"
-      },
-      {
-        "at": "2026-09-16T13:32:42Z",
-        "detail": "#3310 Warn the caller when ListUsers results are truncated by the deadline",
-        "kind": "comment",
-        "repo": "openfga/openfga"
-      },
-      {
-        "at": "2026-09-16T13:32:41Z",
-        "detail": "#3293 Warn the caller when ListObjects results are truncated by the deadline",
-        "kind": "comment",
-        "repo": "openfga/openfga"
-      },
-      {
-        "at": "2026-09-16T13:32:36Z",
-        "detail": "opened #3311 ",
-        "kind": "pr",
-        "repo": "openfga/openfga"
-      },
-      {
-        "at": "2026-09-16T13:32:34Z",
-        "detail": "new branch feat/listusers-deadline-warning",
-        "kind": "create",
-        "repo": "yxshwanth/openfga"
-      },
-      {
-        "at": "2026-09-16T13:31:00Z",
-        "detail": "opened #3310 Warn the caller when ListUsers results are truncated by the deadline",
-        "kind": "issue",
-        "repo": "openfga/openfga"
-      },
-      {
-        "at": "2026-09-16T13:30:58Z",
-        "detail": "reviewed #3293 ",
-        "kind": "review",
-        "repo": "openfga/openfga"
       }
     ],
     "tally": {
-      "comment": 3,
-      "commit": 40,
-      "create": 3,
-      "issue": 1,
-      "pr": 6,
-      "review": 2,
+      "comment": 1,
+      "commit": 38,
+      "create": 2,
+      "pr": 5,
       "star": 4
     }
   },
@@ -185,5 +141,5 @@
     "repos": 26,
     "stars": 5
   },
-  "updated": "2026-10-16"
+  "updated": "2026-10-17"
 }
