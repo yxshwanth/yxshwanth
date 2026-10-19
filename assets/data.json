@@ -108,26 +108,14 @@
         "detail": "starred",
         "kind": "star",
         "repo": "poteto/hiring-without-whiteboards"
-      },
-      {
-        "at": "2026-09-18T23:06:11Z",
-        "detail": "starred",
-        "kind": "star",
-        "repo": "apache/datafusion"
-      },
-      {
-        "at": "2026-09-16T17:30:36Z",
-        "detail": "pushed to listusers-deadline-warning",
-        "kind": "commit",
-        "repo": "yxshwanth/openfga"
       }
     ],
     "tally": {
       "comment": 1,
-      "commit": 38,
+      "commit": 36,
       "create": 2,
       "pr": 5,
-      "star": 4
+      "star": 3
     }
   },
   "post": {
@@ -141,5 +129,5 @@
     "repos": 26,
     "stars": 5
   },
-  "updated": "2026-10-18"
+  "updated": "2026-10-19"
 }
