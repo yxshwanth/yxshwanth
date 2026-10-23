@@ -120,12 +120,6 @@
         "detail": "starred",
         "kind": "star",
         "repo": "NVIDIA/OpenShell"
-      },
-      {
-        "at": "2026-09-22T16:46:33Z",
-        "detail": "starred",
-        "kind": "star",
-        "repo": "poteto/hiring-without-whiteboards"
       }
     ],
     "tally": {
@@ -133,7 +127,7 @@
       "commit": 36,
       "create": 3,
       "pr": 7,
-      "star": 3
+      "star": 2
     }
   },
   "post": {
@@ -147,5 +141,5 @@
     "repos": 26,
     "stars": 5
   },
-  "updated": "2026-10-22"
+  "updated": "2026-10-23"
 }
