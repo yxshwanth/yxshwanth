@@ -116,8 +116,8 @@
         "repo": "openfga/openfga"
       },
       {
-        "at": "2026-10-03T22:26:40Z",
-        "detail": "pushed to v0.2.1-doc-sync",
+        "at": "2026-10-03T22:26:41Z",
+        "detail": "pushed to sys-0.47.0",
         "kind": "commit",
         "repo": "yxshwanth/Interlock"
       },
@@ -195,5 +195,5 @@
     "repos": 26,
     "stars": 5
   },
-  "updated": "2026-10-27"
+  "updated": "2026-10-28"
 }
