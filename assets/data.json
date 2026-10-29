@@ -168,12 +168,6 @@
         "detail": "new branch main",
         "kind": "create",
         "repo": "yxshwanth/scope"
-      },
-      {
-        "at": "2026-09-28T12:45:08Z",
-        "detail": "starred",
-        "kind": "star",
-        "repo": "NVIDIA/OpenShell"
       }
     ],
     "tally": {
@@ -181,7 +175,7 @@
       "commit": 40,
       "create": 5,
       "pr": 11,
-      "star": 2
+      "star": 1
     }
   },
   "post": {
@@ -195,5 +189,5 @@
     "repos": 26,
     "stars": 5
   },
-  "updated": "2026-10-28"
+  "updated": "2026-10-29"
 }
