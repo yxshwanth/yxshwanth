@@ -162,18 +162,12 @@
         "detail": "pushed to listusers-deadline-warning",
         "kind": "commit",
         "repo": "yxshwanth/openfga"
-      },
-      {
-        "at": "2026-09-29T20:20:04Z",
-        "detail": "new branch main",
-        "kind": "create",
-        "repo": "yxshwanth/scope"
       }
     ],
     "tally": {
       "comment": 1,
       "commit": 40,
-      "create": 5,
+      "create": 4,
       "pr": 11,
       "star": 1
     }
@@ -189,5 +183,5 @@
     "repos": 26,
     "stars": 5
   },
-  "updated": "2026-10-30"
+  "updated": "2026-10-31"
 }
