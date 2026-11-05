@@ -78,16 +78,10 @@
         "detail": "pushed to listusers-deadline-warning",
         "kind": "commit",
         "repo": "yxshwanth/openfga"
-      },
-      {
-        "at": "2026-10-03T22:26:41Z",
-        "detail": "pushed to v0.2.0",
-        "kind": "commit",
-        "repo": "yxshwanth/Interlock"
       }
     ],
     "tally": {
-      "commit": 13,
+      "commit": 5,
       "create": 3,
       "pr": 6
     }
@@ -99,9 +93,9 @@
   },
   "stats": {
     "commits": 174,
-    "followers": 15,
+    "followers": 13,
     "repos": 26,
     "stars": 5
   },
-  "updated": "2026-11-04"
+  "updated": "2026-11-05"
 }
