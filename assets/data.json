@@ -72,16 +72,10 @@
         "detail": "opened #55 ",
         "kind": "pr",
         "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-10-08T03:50:44Z",
-        "detail": "pushed to listusers-deadline-warning",
-        "kind": "commit",
-        "repo": "yxshwanth/openfga"
       }
     ],
     "tally": {
-      "commit": 5,
+      "commit": 4,
       "create": 3,
       "pr": 6
     }
@@ -97,5 +91,5 @@
     "repos": 26,
     "stars": 5
   },
-  "updated": "2026-11-07"
+  "updated": "2026-11-08"
 }
