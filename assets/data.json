@@ -2,253 +2,253 @@
   "activity": {
     "rows": [
       {
-        "at": "2026-11-19T06:50:35Z",
-        "detail": "#58 Decision log",
-        "kind": "comment",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-19T06:50:34Z",
-        "detail": "#58 Decision log",
-        "kind": "comment",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-19T06:44:06Z",
-        "detail": "pushed to 62-wave-2-corpus",
+        "at": "2026-11-19T21:46:11Z",
+        "detail": "pushed to 88-rust-taint",
         "kind": "commit",
         "repo": "yxshwanth/Interlock"
       },
       {
-        "at": "2026-11-19T06:52:40Z",
-        "detail": "new branch fix/71-allowlist-hostnames",
+        "at": "2026-11-19T20:08:09Z",
+        "detail": "new branch fix/72-bench-gate-best-of",
         "kind": "create",
         "repo": "yxshwanth/Interlock"
       },
       {
-        "at": "2026-11-19T06:44:20Z",
+        "at": "2026-11-19T06:28:45Z",
         "detail": "pushed to main",
         "kind": "commit",
         "repo": "yxshwanth/Interlock"
       },
       {
-        "at": "2026-11-18T05:17:46Z",
-        "detail": "new branch chore/900-conn-check-900",
-        "kind": "create",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-18T05:46:59Z",
-        "detail": "new branch fix/64-ingestresult-fail-closed",
-        "kind": "create",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-19T06:53:25Z",
-        "detail": "labeled #72 Bench gate fails on runner noise: gate on the best of several runs",
-        "kind": "issue",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-19T06:53:22Z",
-        "detail": "#72 Bench gate fails on runner noise: gate on the best of several runs",
+        "at": "2026-11-19T21:45:36Z",
+        "detail": "#88 Port taint extraction to the Rust engine",
         "kind": "comment",
         "repo": "yxshwanth/Interlock"
       },
       {
-        "at": "2026-11-19T06:50:19Z",
-        "detail": "opened #72 Bench gate fails on runner noise: gate on the best of several runs",
-        "kind": "issue",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-19T06:50:18Z",
-        "detail": "labeled #72 Bench gate fails on runner noise: gate on the best of several runs",
-        "kind": "issue",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-19T06:50:18Z",
-        "detail": "labeled #72 Bench gate fails on runner noise: gate on the best of several runs",
-        "kind": "issue",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-19T06:49:44Z",
-        "detail": "closed #62 Replay Wave 2 onto main",
-        "kind": "issue",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-19T06:49:41Z",
-        "detail": "merged #67 ",
-        "kind": "pr",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-19T06:49:36Z",
-        "detail": "#67 feat(corpus): move scenarios to data files, add held-out set and fuzz targets",
+        "at": "2026-11-19T21:41:54Z",
+        "detail": "#90 Port taint extraction to interlock-engine",
         "kind": "comment",
         "repo": "yxshwanth/Interlock"
       },
       {
-        "at": "2026-11-19T06:44:28Z",
-        "detail": "labeled #67 ",
-        "kind": "pr",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-19T06:44:28Z",
-        "detail": "unlabeled #67 ",
-        "kind": "pr",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-19T06:44:40Z",
-        "detail": "labeled #71 Reconcile egress_allowlist hostname handling with the docs and example config",
+        "at": "2026-11-20T01:55:51Z",
+        "detail": "closed #114 Compose the overlap check in the Rust engine: decode, JSON leaves and containers",
         "kind": "issue",
         "repo": "yxshwanth/Interlock"
       },
       {
-        "at": "2026-11-19T06:44:40Z",
-        "detail": "labeled #71 Reconcile egress_allowlist hostname handling with the docs and example config",
-        "kind": "issue",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-19T06:44:39Z",
-        "detail": "opened #71 Reconcile egress_allowlist hostname handling with the docs and example config",
-        "kind": "issue",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-19T06:44:21Z",
-        "detail": "closed #63 Add regression tests for the findings marked Fixed",
-        "kind": "issue",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-19T06:44:19Z",
-        "detail": "merged #68 ",
+        "at": "2026-11-20T01:55:48Z",
+        "detail": "merged #115 ",
         "kind": "pr",
         "repo": "yxshwanth/Interlock"
       },
       {
-        "at": "2026-11-19T06:39:02Z",
-        "detail": "unlabeled #68 ",
+        "at": "2026-11-20T01:48:53Z",
+        "detail": "labeled #115 ",
         "kind": "pr",
         "repo": "yxshwanth/Interlock"
       },
       {
-        "at": "2026-11-19T06:39:02Z",
-        "detail": "labeled #68 ",
+        "at": "2026-11-20T01:48:53Z",
+        "detail": "unlabeled #115 ",
         "kind": "pr",
         "repo": "yxshwanth/Interlock"
       },
       {
-        "at": "2026-11-19T06:41:59Z",
-        "detail": "reviewed #67 ",
+        "at": "2026-11-20T01:54:39Z",
+        "detail": "reviewed #113 ",
         "kind": "review",
         "repo": "yxshwanth/Interlock"
       },
       {
-        "at": "2026-11-18T05:59:46Z",
-        "detail": "pushed to 62-wave-2-corpus",
+        "at": "2026-11-20T01:51:04Z",
+        "detail": "reviewed #119 ",
+        "kind": "review",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-20T01:48:16Z",
+        "detail": "labeled #119 ",
+        "kind": "pr",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-20T01:48:16Z",
+        "detail": "opened #119 ",
+        "kind": "pr",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-20T01:47:28Z",
+        "detail": "closed #116 Update docs/rust_port.md for the merged Rust pieces",
+        "kind": "issue",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-20T01:47:25Z",
+        "detail": "merged #117 ",
+        "kind": "pr",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-20T01:39:04Z",
+        "detail": "labeled #117 ",
+        "kind": "pr",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-20T01:39:04Z",
+        "detail": "unlabeled #117 ",
+        "kind": "pr",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-20T01:40:53Z",
+        "detail": "labeled #118 Pin result text, fragment buffer and taint registration vectors from the Go engine",
+        "kind": "issue",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-20T01:40:48Z",
+        "detail": "labeled #118 Pin result text, fragment buffer and taint registration vectors from the Go engine",
+        "kind": "issue",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-20T01:40:48Z",
+        "detail": "opened #118 Pin result text, fragment buffer and taint registration vectors from the Go engine",
+        "kind": "issue",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-20T01:39:54Z",
+        "detail": "reviewed #115 ",
+        "kind": "review",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-20T01:39:05Z",
+        "detail": "reviewed #117 ",
+        "kind": "review",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-20T01:38:37Z",
+        "detail": "labeled #117 ",
+        "kind": "pr",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-20T01:38:37Z",
+        "detail": "opened #117 ",
+        "kind": "pr",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-20T01:38:00Z",
+        "detail": "labeled #116 Update docs/rust_port.md for the merged Rust pieces",
+        "kind": "issue",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-20T01:37:59Z",
+        "detail": "labeled #116 Update docs/rust_port.md for the merged Rust pieces",
+        "kind": "issue",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-20T01:37:59Z",
+        "detail": "opened #116 Update docs/rust_port.md for the merged Rust pieces",
+        "kind": "issue",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-20T01:35:48Z",
+        "detail": "closed #111 Port tool tags and path taint to the Rust engine",
+        "kind": "issue",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-20T01:35:45Z",
+        "detail": "merged #112 ",
+        "kind": "pr",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-20T01:27:44Z",
+        "detail": "labeled #112 ",
+        "kind": "pr",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-20T01:27:44Z",
+        "detail": "unlabeled #112 ",
+        "kind": "pr",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-19T23:03:42Z",
+        "detail": "pushed to 95-tag-path-vectors",
         "kind": "commit",
         "repo": "yxshwanth/Interlock"
       },
       {
-        "at": "2026-11-19T06:37:44Z",
-        "detail": "closed #64 IngestResult recover must fail closed",
-        "kind": "issue",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-19T06:37:41Z",
-        "detail": "merged #66 ",
-        "kind": "pr",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-18T05:54:20Z",
-        "detail": "pushed to 62-wave-2-corpus",
-        "kind": "commit",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-18T05:27:29Z",
-        "detail": "new branch chore/901-conn-check-901",
-        "kind": "create",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-19T06:31:32Z",
-        "detail": "reviewed #67 ",
+        "at": "2026-11-20T01:27:37Z",
+        "detail": "reviewed #112 ",
         "kind": "review",
         "repo": "yxshwanth/Interlock"
       },
       {
-        "at": "2026-11-19T06:28:44Z",
-        "detail": "merged #70 ",
+        "at": "2026-11-20T01:27:33Z",
+        "detail": "labeled #115 ",
         "kind": "pr",
         "repo": "yxshwanth/Interlock"
       },
       {
-        "at": "2026-11-19T06:28:47Z",
-        "detail": "unlabeled #69 Bump klauspost/compress to fix GO-2026-6865",
+        "at": "2026-11-20T01:27:33Z",
+        "detail": "opened #115 ",
+        "kind": "pr",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-20T01:23:26Z",
+        "detail": "labeled #114 Compose the overlap check in the Rust engine: decode, JSON leaves and containers",
         "kind": "issue",
         "repo": "yxshwanth/Interlock"
       },
       {
-        "at": "2026-11-19T06:28:47Z",
-        "detail": "reviewed #70 ",
-        "kind": "review",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-19T06:28:46Z",
-        "detail": "closed #69 Bump klauspost/compress to fix GO-2026-6865",
+        "at": "2026-11-20T01:23:25Z",
+        "detail": "labeled #114 Compose the overlap check in the Rust engine: decode, JSON leaves and containers",
         "kind": "issue",
         "repo": "yxshwanth/Interlock"
       },
       {
-        "at": "2026-11-19T06:16:53Z",
-        "detail": "labeled #70 ",
+        "at": "2026-11-20T01:23:25Z",
+        "detail": "opened #114 Compose the overlap check in the Rust engine: decode, JSON leaves and containers",
+        "kind": "issue",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-20T01:22:39Z",
+        "detail": "merged #107 ",
         "kind": "pr",
         "repo": "yxshwanth/Interlock"
       },
       {
-        "at": "2026-11-19T06:16:53Z",
-        "detail": "unlabeled #70 ",
-        "kind": "pr",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-19T06:16:52Z",
-        "detail": "labeled #70 ",
-        "kind": "pr",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-19T06:16:52Z",
-        "detail": "opened #70 ",
-        "kind": "pr",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-18T05:23:05Z",
-        "detail": "new branch chore/902-conn-check-902",
-        "kind": "create",
+        "at": "2026-11-20T01:22:41Z",
+        "detail": "closed #102 Port container inspection to the Rust engine",
+        "kind": "issue",
         "repo": "yxshwanth/Interlock"
       }
     ],
     "tally": {
       "comment": 12,
-      "commit": 9,
+      "commit": 11,
       "create": 8,
-      "issue": 28,
-      "pr": 35,
-      "review": 6
+      "issue": 109,
+      "pr": 117,
+      "review": 39
     }
   },
   "post": {
@@ -257,10 +257,10 @@
     "url": "https://yashwanthreddymali.com/blog/interlock-exfiltration-at-runtime/"
   },
   "stats": {
-    "commits": 183,
+    "commits": 204,
     "followers": 13,
     "repos": 27,
     "stars": 5
   },
-  "updated": "2026-11-19"
+  "updated": "2026-11-20"
 }
