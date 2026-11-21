@@ -2,6 +2,144 @@
   "activity": {
     "rows": [
       {
+        "at": "2026-11-21T10:44:20Z",
+        "detail": "pushed to main",
+        "kind": "commit",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-21T10:58:23Z",
+        "detail": "merged #121 ",
+        "kind": "pr",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-21T10:58:26Z",
+        "detail": "closed #120 Replay the sink-args overlap vectors against the Rust overlap composition",
+        "kind": "issue",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-21T10:52:48Z",
+        "detail": "labeled #121 ",
+        "kind": "pr",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-21T10:52:48Z",
+        "detail": "unlabeled #121 ",
+        "kind": "pr",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-21T10:56:11Z",
+        "detail": "labeled #122 Port the ingest helpers to the Rust engine: result text, fragments, taint registration, container taint",
+        "kind": "issue",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-21T10:56:11Z",
+        "detail": "opened #122 Port the ingest helpers to the Rust engine: result text, fragments, taint registration, container taint",
+        "kind": "issue",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-21T10:55:52Z",
+        "detail": "reviewed #119 ",
+        "kind": "review",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-21T10:52:50Z",
+        "detail": "reviewed #121 ",
+        "kind": "review",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-21T10:51:41Z",
+        "detail": "labeled #121 ",
+        "kind": "pr",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-21T10:51:41Z",
+        "detail": "opened #121 ",
+        "kind": "pr",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-21T10:49:23Z",
+        "detail": "labeled #120 Replay the sink-args overlap vectors against the Rust overlap composition",
+        "kind": "issue",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-21T10:44:19Z",
+        "detail": "merged #113 ",
+        "kind": "pr",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-21T10:44:23Z",
+        "detail": "closed #110 Pin sink-args overlap vectors from the Go engine",
+        "kind": "issue",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-21T10:38:45Z",
+        "detail": "labeled #113 ",
+        "kind": "pr",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-21T10:38:45Z",
+        "detail": "unlabeled #113 ",
+        "kind": "pr",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-21T10:39:15Z",
+        "detail": "labeled #120 Replay the sink-args overlap vectors against the Rust overlap composition",
+        "kind": "issue",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-21T10:39:15Z",
+        "detail": "opened #120 Replay the sink-args overlap vectors against the Rust overlap composition",
+        "kind": "issue",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-21T10:38:47Z",
+        "detail": "reviewed #113 ",
+        "kind": "review",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-19T06:30:33Z",
+        "detail": "pushed to 64-ingestresult-fail-closed",
+        "kind": "commit",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-20T01:44:40Z",
+        "detail": "new branch test/118-ingest-vectors",
+        "kind": "create",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-19T23:25:26Z",
+        "detail": "pushed to main",
+        "kind": "commit",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-19T21:55:43Z",
+        "detail": "new branch test/95-tag-path-vectors",
+        "kind": "create",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
         "at": "2026-11-19T21:46:11Z",
         "detail": "pushed to 88-rust-taint",
         "kind": "commit",
@@ -102,153 +240,15 @@
         "detail": "unlabeled #117 ",
         "kind": "pr",
         "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-20T01:40:53Z",
-        "detail": "labeled #118 Pin result text, fragment buffer and taint registration vectors from the Go engine",
-        "kind": "issue",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-20T01:40:48Z",
-        "detail": "labeled #118 Pin result text, fragment buffer and taint registration vectors from the Go engine",
-        "kind": "issue",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-20T01:40:48Z",
-        "detail": "opened #118 Pin result text, fragment buffer and taint registration vectors from the Go engine",
-        "kind": "issue",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-20T01:39:54Z",
-        "detail": "reviewed #115 ",
-        "kind": "review",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-20T01:39:05Z",
-        "detail": "reviewed #117 ",
-        "kind": "review",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-20T01:38:37Z",
-        "detail": "labeled #117 ",
-        "kind": "pr",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-20T01:38:37Z",
-        "detail": "opened #117 ",
-        "kind": "pr",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-20T01:38:00Z",
-        "detail": "labeled #116 Update docs/rust_port.md for the merged Rust pieces",
-        "kind": "issue",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-20T01:37:59Z",
-        "detail": "labeled #116 Update docs/rust_port.md for the merged Rust pieces",
-        "kind": "issue",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-20T01:37:59Z",
-        "detail": "opened #116 Update docs/rust_port.md for the merged Rust pieces",
-        "kind": "issue",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-20T01:35:48Z",
-        "detail": "closed #111 Port tool tags and path taint to the Rust engine",
-        "kind": "issue",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-20T01:35:45Z",
-        "detail": "merged #112 ",
-        "kind": "pr",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-20T01:27:44Z",
-        "detail": "labeled #112 ",
-        "kind": "pr",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-20T01:27:44Z",
-        "detail": "unlabeled #112 ",
-        "kind": "pr",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-19T23:03:42Z",
-        "detail": "pushed to 95-tag-path-vectors",
-        "kind": "commit",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-20T01:27:37Z",
-        "detail": "reviewed #112 ",
-        "kind": "review",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-20T01:27:33Z",
-        "detail": "labeled #115 ",
-        "kind": "pr",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-20T01:27:33Z",
-        "detail": "opened #115 ",
-        "kind": "pr",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-20T01:23:26Z",
-        "detail": "labeled #114 Compose the overlap check in the Rust engine: decode, JSON leaves and containers",
-        "kind": "issue",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-20T01:23:25Z",
-        "detail": "labeled #114 Compose the overlap check in the Rust engine: decode, JSON leaves and containers",
-        "kind": "issue",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-20T01:23:25Z",
-        "detail": "opened #114 Compose the overlap check in the Rust engine: decode, JSON leaves and containers",
-        "kind": "issue",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-20T01:22:39Z",
-        "detail": "merged #107 ",
-        "kind": "pr",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-20T01:22:41Z",
-        "detail": "closed #102 Port container inspection to the Rust engine",
-        "kind": "issue",
-        "repo": "yxshwanth/Interlock"
       }
     ],
     "tally": {
-      "comment": 12,
-      "commit": 11,
-      "create": 8,
-      "issue": 109,
+      "comment": 8,
+      "commit": 17,
+      "create": 6,
+      "issue": 106,
       "pr": 117,
-      "review": 39
+      "review": 40
     }
   },
   "post": {
@@ -257,10 +257,10 @@
     "url": "https://yashwanthreddymali.com/blog/interlock-exfiltration-at-runtime/"
   },
   "stats": {
-    "commits": 204,
+    "commits": 206,
     "followers": 13,
     "repos": 27,
     "stars": 5
   },
-  "updated": "2026-11-20"
+  "updated": "2026-11-21"
 }
