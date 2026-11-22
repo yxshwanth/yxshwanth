@@ -2,8 +2,140 @@
   "activity": {
     "rows": [
       {
-        "at": "2026-11-21T10:44:20Z",
+        "at": "2026-11-21T10:37:37Z",
+        "detail": "pushed to 110-overlap-args-vectors",
+        "kind": "commit",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-19T23:16:11Z",
+        "detail": "new branch feat/111-rust-tagger",
+        "kind": "create",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-19T22:56:32Z",
         "detail": "pushed to main",
+        "kind": "commit",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-19T22:40:51Z",
+        "detail": "new branch feat/108-rust-legs",
+        "kind": "create",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-20T01:01:46Z",
+        "detail": "new branch test/110-overlap-args-vectors",
+        "kind": "create",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-19T22:36:25Z",
+        "detail": "pushed to main",
+        "kind": "commit",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-19T21:46:53Z",
+        "detail": "new branch test/86-container-vectors",
+        "kind": "create",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-19T21:42:51Z",
+        "detail": "new branch feat/88-rust-taint",
+        "kind": "create",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-19T21:39:13Z",
+        "detail": "new branch test/87-evidence-chain-vectors",
+        "kind": "create",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-20T01:38:34Z",
+        "detail": "new branch docs/116-rust-port-status",
+        "kind": "create",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-20T01:35:47Z",
+        "detail": "pushed to main",
+        "kind": "commit",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-19T22:25:16Z",
+        "detail": "new branch feat/100-rust-decode",
+        "kind": "create",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-19T23:10:11Z",
+        "detail": "pushed to 102-rust-container",
+        "kind": "commit",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-19T22:13:54Z",
+        "detail": "new branch feat/101-rust-evidence-chain",
+        "kind": "create",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-20T01:27:44Z",
+        "detail": "pushed to 111-rust-tagger",
+        "kind": "commit",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-20T01:27:26Z",
+        "detail": "new branch feat/114-rust-overlap-compose",
+        "kind": "create",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-19T21:57:23Z",
+        "detail": "pushed to 85-decode-vectors",
+        "kind": "commit",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-19T20:57:40Z",
+        "detail": "new branch feat/80-rust-encodings",
+        "kind": "create",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-19T21:33:46Z",
+        "detail": "pushed to main",
+        "kind": "commit",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-19T20:30:48Z",
+        "detail": "new branch feat/76-rust-workspace",
+        "kind": "create",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-19T22:36:30Z",
+        "detail": "pushed to 93-rust-overlap",
+        "kind": "commit",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-19T22:24:47Z",
+        "detail": "new branch fix/104-entropy-test-flake",
+        "kind": "create",
+        "repo": "yxshwanth/Interlock"
+      },
+      {
+        "at": "2026-11-19T22:19:22Z",
+        "detail": "pushed to 86-container-vectors",
         "kind": "commit",
         "repo": "yxshwanth/Interlock"
       },
@@ -108,147 +240,15 @@
         "detail": "opened #120 Replay the sink-args overlap vectors against the Rust overlap composition",
         "kind": "issue",
         "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-21T10:38:47Z",
-        "detail": "reviewed #113 ",
-        "kind": "review",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-19T06:30:33Z",
-        "detail": "pushed to 64-ingestresult-fail-closed",
-        "kind": "commit",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-20T01:44:40Z",
-        "detail": "new branch test/118-ingest-vectors",
-        "kind": "create",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-19T23:25:26Z",
-        "detail": "pushed to main",
-        "kind": "commit",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-19T21:55:43Z",
-        "detail": "new branch test/95-tag-path-vectors",
-        "kind": "create",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-19T21:46:11Z",
-        "detail": "pushed to 88-rust-taint",
-        "kind": "commit",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-19T20:08:09Z",
-        "detail": "new branch fix/72-bench-gate-best-of",
-        "kind": "create",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-19T06:28:45Z",
-        "detail": "pushed to main",
-        "kind": "commit",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-19T21:45:36Z",
-        "detail": "#88 Port taint extraction to the Rust engine",
-        "kind": "comment",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-19T21:41:54Z",
-        "detail": "#90 Port taint extraction to interlock-engine",
-        "kind": "comment",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-20T01:55:51Z",
-        "detail": "closed #114 Compose the overlap check in the Rust engine: decode, JSON leaves and containers",
-        "kind": "issue",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-20T01:55:48Z",
-        "detail": "merged #115 ",
-        "kind": "pr",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-20T01:48:53Z",
-        "detail": "labeled #115 ",
-        "kind": "pr",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-20T01:48:53Z",
-        "detail": "unlabeled #115 ",
-        "kind": "pr",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-20T01:54:39Z",
-        "detail": "reviewed #113 ",
-        "kind": "review",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-20T01:51:04Z",
-        "detail": "reviewed #119 ",
-        "kind": "review",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-20T01:48:16Z",
-        "detail": "labeled #119 ",
-        "kind": "pr",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-20T01:48:16Z",
-        "detail": "opened #119 ",
-        "kind": "pr",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-20T01:47:28Z",
-        "detail": "closed #116 Update docs/rust_port.md for the merged Rust pieces",
-        "kind": "issue",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-20T01:47:25Z",
-        "detail": "merged #117 ",
-        "kind": "pr",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-20T01:39:04Z",
-        "detail": "labeled #117 ",
-        "kind": "pr",
-        "repo": "yxshwanth/Interlock"
-      },
-      {
-        "at": "2026-11-20T01:39:04Z",
-        "detail": "unlabeled #117 ",
-        "kind": "pr",
-        "repo": "yxshwanth/Interlock"
       }
     ],
     "tally": {
-      "comment": 8,
-      "commit": 17,
-      "create": 6,
-      "issue": 106,
-      "pr": 117,
-      "review": 40
+      "comment": 6,
+      "commit": 51,
+      "create": 18,
+      "issue": 85,
+      "pr": 91,
+      "review": 33
     }
   },
   "post": {
@@ -262,5 +262,5 @@
     "repos": 27,
     "stars": 5
   },
-  "updated": "2026-11-21"
+  "updated": "2026-11-22"
 }
